@@ -1,0 +1,63 @@
+﻿@model Shop.Domain.Entities.Order
+@using Shop.web.Helpers
+@{
+    Layout = null;
+    ViewData["Title"] = "جزئیات سفارش";
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/detailorder.css">
+    <title>جزئیات سفارش @Model.OrderNumber</title>
+</head>
+<body>
+    <section class="container-fluid">
+        <section class="accordion-right">
+            <ul class="ul-list">
+                <li><a asp-controller="Orders" asp-action="Index">سفارش ها</a></li>
+                <li><a asp-controller="Profile" asp-action="Index">جزئیات حساب کاربری</a></li>
+                <li>
+                    <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline;">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" style="background:none;border:none;cursor:pointer;">خروج</button>
+                    </form>
+                </li>
+            </ul>
+        </section>
+
+        <section class="right-sec">
+            <section class="container-detail">
+                <header><h1>جزئیات سفارش @Model.OrderNumber</h1></header>
+                <p>وضعیت: <span class="@OrderStatusHelper.GetCssClass(Model.Status)">@OrderStatusHelper.GetPersianLabel(Model.Status)</span></p>
+
+                <section class="row">
+                    <table>
+                        <tr><th>محصول</th><th>تعداد</th><th>مجموع</th></tr>
+                        @foreach (var item in Model.Items)
+                        {
+                            <tr>
+                                <td>@item.ProductName</td>
+                                <td>@item.Quantity</td>
+                                <td><span>@item.TotalPrice.ToString("N0")</span><span class="toman">تومان</span></td>
+                            </tr>
+                        }
+                        <tr>
+                            <td colspan="2">قیمت نهایی</td>
+                            <td><span>@Model.TotalAmount.ToString("N0")</span><span class="toman">تومان</span></td>
+                        </tr>
+                    </table>
+                </section>
+
+                @foreach (var item in Model.Items.Where(i => i.DownloadToken != null))
+                {
+                    <p><a asp-controller="Download" asp-action="File" asp-route-token="@item.DownloadToken!.Token">دانلود @item.ProductName</a></p>
+                }
+
+                <p style="margin-top:1rem;"><a asp-controller="Account" asp-action="Index">بازگشت</a></p>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

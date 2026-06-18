@@ -1,0 +1,56 @@
+﻿@model LoginViewModel
+@{
+    Layout = null;
+    ViewData["Title"] = "ورود";
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/signin.css">
+    <title>ورود / ثبت نام</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <section class="container-login">
+            <section class="sec-right">
+                <h1>ورود / ثبت نام</h1>
+                <p>برای ورود شماره موبایل یا ایمیل و رمز عبور را وارد کنید</p>
+
+                <form asp-action="Login" method="post">
+                    <input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]" />
+                    <div asp-validation-summary="ModelOnly" class="alert" style="display:block;color:red;"></div>
+
+                    <div class="inp">
+                        <label asp-for="UserName">شماره موبایل یا ایمیل</label>
+                        <input asp-for="UserName" class="numberphone" />
+                        <span asp-validation-for="UserName" class="alert"></span>
+                    </div>
+
+                    <div class="inp">
+                        <label asp-for="Password">رمز عبور</label>
+                        <input asp-for="Password" class="numberphone" />
+                        <span asp-validation-for="Password" class="alert"></span>
+                    </div>
+
+                    <div class="remember">
+                        <input asp-for="RememberMe" class="remember-inp inp2" />
+                        <label asp-for="RememberMe">مرا به خاطر بسپار</label>
+                    </div>
+
+                    <div class="submit">
+                        <button type="submit">ورود</button>
+                    </div>
+                </form>
+
+                <p class="sign-person" style="color:#222;">
+                    <a asp-action="Register">ثبت نام کاربر جدید</a>
+                </p>
+            </section>
+            <section class="sec-left"></section>
+        </section>
+    </div>
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>

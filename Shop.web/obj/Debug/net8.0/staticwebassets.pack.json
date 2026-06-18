@@ -1,0 +1,1041 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Shop.web.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Shop.web.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\addarticle.css",
+      "PackagePath": "staticwebassets\\admin\\css\\addarticle.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\addarticle.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\addarticle.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\adddiscount.css",
+      "PackagePath": "staticwebassets\\admin\\css\\adddiscount.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\adddiscount.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\adddiscount.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\addoreditorder.css",
+      "PackagePath": "staticwebassets\\admin\\css\\addoreditorder.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\addoreditorder.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\addoreditorder.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\addproduct.css",
+      "PackagePath": "staticwebassets\\admin\\css\\addproduct.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\addproduct.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\addproduct.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\adduser.css",
+      "PackagePath": "staticwebassets\\admin\\css\\adduser.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\adduser.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\adduser.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\admin.css",
+      "PackagePath": "staticwebassets\\admin\\css\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\admin.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\admin.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\categories.css",
+      "PackagePath": "staticwebassets\\admin\\css\\categories.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\categories.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\categories.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\chatsupport.css",
+      "PackagePath": "staticwebassets\\admin\\css\\chatsupport.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\chatsupport.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\chatsupport.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\defult.css",
+      "PackagePath": "staticwebassets\\admin\\css\\defult.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\defult.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\defult.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\detailorder.css",
+      "PackagePath": "staticwebassets\\admin\\css\\detailorder.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\detailproduct.css",
+      "PackagePath": "staticwebassets\\admin\\css\\detailproduct.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\discountlist.css",
+      "PackagePath": "staticwebassets\\admin\\css\\discountlist.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\discountlist.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\discountlist.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\editarticle.css",
+      "PackagePath": "staticwebassets\\admin\\css\\editarticle.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\edituseradmin.css",
+      "PackagePath": "staticwebassets\\admin\\css\\edituseradmin.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\edituseradmin.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\edituseradmin.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\imgwebsite.css",
+      "PackagePath": "staticwebassets\\admin\\css\\imgwebsite.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\imgwebsite.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\imgwebsite.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listarticle.css",
+      "PackagePath": "staticwebassets\\admin\\css\\listarticle.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listarticle.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\listarticle.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listbrand.css",
+      "PackagePath": "staticwebassets\\admin\\css\\listbrand.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listbrand.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\listbrand.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listcomment.css",
+      "PackagePath": "staticwebassets\\admin\\css\\listcomment.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listcomment.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\listcomment.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listemail.css",
+      "PackagePath": "staticwebassets\\admin\\css\\listemail.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listemail.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\listemail.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listorder.css",
+      "PackagePath": "staticwebassets\\admin\\css\\listorder.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listorder.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\listorder.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listproduct.css",
+      "PackagePath": "staticwebassets\\admin\\css\\listproduct.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listproduct.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\listproduct.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listproductforadd.css",
+      "PackagePath": "staticwebassets\\admin\\css\\listproductforadd.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listproductforadd.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\listproductforadd.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listsupport.css",
+      "PackagePath": "staticwebassets\\admin\\css\\listsupport.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listsupport.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\listsupport.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listuser.css",
+      "PackagePath": "staticwebassets\\admin\\css\\listuser.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\listuser.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\listuser.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\personarchive.css",
+      "PackagePath": "staticwebassets\\admin\\css\\personarchive.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\personarchive.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\personarchive.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\profileedit.css",
+      "PackagePath": "staticwebassets\\admin\\css\\profileedit.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\selector-new.css",
+      "PackagePath": "staticwebassets\\admin\\css\\selector-new.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\settingsite.css",
+      "PackagePath": "staticwebassets\\admin\\css\\settingsite.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\settingsite.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\settingsite.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\transportation.css",
+      "PackagePath": "staticwebassets\\admin\\css\\transportation.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\css\\transportation.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\transportation.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\.eslintignore",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\.eslintignore"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\.eslintrc",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\.eslintrc"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\.gitignore",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\.npmignore",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\.npmignore"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\CODE_OF_CONDUCT.md",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\CODE_OF_CONDUCT.md"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\CONTRIBUTING.md",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\CONTRIBUTING.md"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\ChangeLog-en.md",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\ChangeLog-en.md"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\ChangeLog.md",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\ChangeLog.md"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\LICENSE",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\README-en.md",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\README-en.md"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\README.md",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\SECURITY.md",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\SECURITY.md"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\Sample.md",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\Sample.md"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\dist\\jalalidatepicker.css",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\dist\\jalalidatepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\dist\\jalalidatepicker.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\dist\\jalalidatepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\dist\\jalalidatepicker.min.css",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\dist\\jalalidatepicker.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\dist\\jalalidatepicker.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\dist\\jalalidatepicker.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\package-lock.json",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\package-lock.json"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\package.json",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\DropDownAdded.png",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\DropDownAdded.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\filesize.svg",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\filesize.svg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\filesizegzip.svg",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\filesizegzip.svg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\jdp-datetime-min.png",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\jdp-datetime-min.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\jdp-header-min.png",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\jdp-header-min.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\jdp-minmax-min.png",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\jdp-minmax-min.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\jdp-time-min.png",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\jdp-time-min.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\sample1.png",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\sample1.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\sample2.png",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\sample2.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\sample3.png",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\sample3.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\sample4.png",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\sample4.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\res\\sample5.png",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\res\\sample5.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\constants.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\constants.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\css\\index.css",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\css\\index.css.map",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\css\\index.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\datePickerDraw.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\datePickerDraw.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\defaults.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\defaults.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\draw.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\draw.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\index.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\styles\\index.scss",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\styles\\index.scss"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\timePickerDraw.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\timePickerDraw.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\utils\\dom.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\utils\\dom.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\utils\\index.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\utils\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\utils\\jalali.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\utils\\jalali.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\src\\utils\\object.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\src\\utils\\object.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\test\\index.html",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\test\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\JalaliDatePicker-main\\webpack.config.js",
+      "PackagePath": "staticwebassets\\admin\\js\\JalaliDatePicker-main\\webpack.config.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\addproduct.js",
+      "PackagePath": "staticwebassets\\admin\\js\\addproduct.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\admin.js",
+      "PackagePath": "staticwebassets\\admin\\js\\admin.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\counter.js",
+      "PackagePath": "staticwebassets\\admin\\js\\counter.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\imgwebsite.js",
+      "PackagePath": "staticwebassets\\admin\\js\\imgwebsite.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\listcomment.js",
+      "PackagePath": "staticwebassets\\admin\\js\\listcomment.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\listemail.js",
+      "PackagePath": "staticwebassets\\admin\\js\\listemail.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\menu-admin.js",
+      "PackagePath": "staticwebassets\\admin\\js\\menu-admin.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\new-selector.js",
+      "PackagePath": "staticwebassets\\admin\\js\\new-selector.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\admin\\js\\settingsite.js",
+      "PackagePath": "staticwebassets\\admin\\js\\settingsite.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\Invoice.css",
+      "PackagePath": "staticwebassets\\css\\Invoice.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\Invoice.css.map",
+      "PackagePath": "staticwebassets\\css\\Invoice.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\about.css.map",
+      "PackagePath": "staticwebassets\\css\\about.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\account-settlement.css",
+      "PackagePath": "staticwebassets\\css\\account-settlement.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\account-settlement.css.map",
+      "PackagePath": "staticwebassets\\css\\account-settlement.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\account.css",
+      "PackagePath": "staticwebassets\\css\\account.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\account.css.map",
+      "PackagePath": "staticwebassets\\css\\account.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\article.css",
+      "PackagePath": "staticwebassets\\css\\article.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\article.css.map",
+      "PackagePath": "staticwebassets\\css\\article.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\cart.css.map",
+      "PackagePath": "staticwebassets\\css\\cart.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\contact.css",
+      "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\contact.css.map",
+      "PackagePath": "staticwebassets\\css\\contact.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\defult.css",
+      "PackagePath": "staticwebassets\\css\\defult.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\defult.css.map",
+      "PackagePath": "staticwebassets\\css\\defult.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\detailorder.css",
+      "PackagePath": "staticwebassets\\css\\detailorder.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\detailorder.css.map",
+      "PackagePath": "staticwebassets\\css\\detailorder.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\product.css",
+      "PackagePath": "staticwebassets\\css\\product.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\product.css.map",
+      "PackagePath": "staticwebassets\\css\\product.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\shop.css",
+      "PackagePath": "staticwebassets\\css\\shop.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\shop.css.map",
+      "PackagePath": "staticwebassets\\css\\shop.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\signin.css",
+      "PackagePath": "staticwebassets\\css\\signin.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\signin.css.map",
+      "PackagePath": "staticwebassets\\css\\signin.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\signin2.css",
+      "PackagePath": "staticwebassets\\css\\signin2.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\special.css",
+      "PackagePath": "staticwebassets\\css\\special.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\special.css.map",
+      "PackagePath": "staticwebassets\\css\\special.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\font\\Cinema Full.ttf",
+      "PackagePath": "staticwebassets\\font\\Cinema Full.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\font\\Shabnam-Bold-FD.eot",
+      "PackagePath": "staticwebassets\\font\\Shabnam-Bold-FD.eot"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\font\\Shabnam-Bold-FD.ttf",
+      "PackagePath": "staticwebassets\\font\\Shabnam-Bold-FD.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\font\\Shabnam-Bold-FD.woff",
+      "PackagePath": "staticwebassets\\font\\Shabnam-Bold-FD.woff"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\font\\Shabnam-Bold-FD.woff2",
+      "PackagePath": "staticwebassets\\font\\Shabnam-Bold-FD.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\aboutus\\box.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\box.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\aboutus\\company-mobile.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\company-mobile.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\aboutus\\flash.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\flash.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\aboutus\\image.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\image.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\aboutus\\motorbike.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\motorbike.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\aboutus\\star.png",
+      "PackagePath": "staticwebassets\\images\\aboutus\\star.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\aaSsjevFjjFwAXTDz3kiKo.jpg",
+      "PackagePath": "staticwebassets\\images\\articles\\aaSsjevFjjFwAXTDz3kiKo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\ad20a54a32b04c6d8cff7c03d15dccf4.png",
+      "PackagePath": "staticwebassets\\images\\articles\\ad20a54a32b04c6d8cff7c03d15dccf4.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\article-1.jpg",
+      "PackagePath": "staticwebassets\\images\\articles\\article-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\f239d86fc4f549ff9c39bbf48cb62d9d.jpg",
+      "PackagePath": "staticwebassets\\images\\articles\\f239d86fc4f549ff9c39bbf48cb62d9d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\articles\\profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\background-logo.png",
+      "PackagePath": "staticwebassets\\images\\index\\background-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\box.png",
+      "PackagePath": "staticwebassets\\images\\index\\box.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\call-calling-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\images\\index\\call-calling-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\duble-slider\\duble-slider-1.jpg",
+      "PackagePath": "staticwebassets\\images\\index\\duble-slider\\duble-slider-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\duble-slider\\duble-slider-2.jpg",
+      "PackagePath": "staticwebassets\\images\\index\\duble-slider\\duble-slider-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\fast-delivery.png",
+      "PackagePath": "staticwebassets\\images\\index\\fast-delivery.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\headphones-with-microphone.png",
+      "PackagePath": "staticwebassets\\images\\index\\headphones-with-microphone.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\minislider\\mini-slider-2.jpg",
+      "PackagePath": "staticwebassets\\images\\index\\minislider\\mini-slider-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\minislider\\mini-slider-3.jpg",
+      "PackagePath": "staticwebassets\\images\\index\\minislider\\mini-slider-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\minislider\\mini-slider.jpg",
+      "PackagePath": "staticwebassets\\images\\index\\minislider\\mini-slider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\price-tag.png",
+      "PackagePath": "staticwebassets\\images\\index\\price-tag.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\slider\\slider-1.jpg",
+      "PackagePath": "staticwebassets\\images\\index\\slider\\slider-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\slider\\slider-2.jpg",
+      "PackagePath": "staticwebassets\\images\\index\\slider\\slider-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\special-progres.png",
+      "PackagePath": "staticwebassets\\images\\index\\special-progres.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\index\\star.png",
+      "PackagePath": "staticwebassets\\images\\index\\star.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\logo\\#U0646#U062d#U0646.psd",
+      "PackagePath": "staticwebassets\\images\\logo\\#U0646#U062d#U0646.psd"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\logo\\background-logo.ico",
+      "PackagePath": "staticwebassets\\images\\logo\\background-logo.ico"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\logo\\background-logo.png",
+      "PackagePath": "staticwebassets\\images\\logo\\background-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\logo\\gude-2026-04-01.log",
+      "PackagePath": "staticwebassets\\images\\logo\\gude-2026-04-01.log"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\logo\\logo-header.png",
+      "PackagePath": "staticwebassets\\images\\logo\\logo-header.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\logo\\mobile-logo.psd",
+      "PackagePath": "staticwebassets\\images\\logo\\mobile-logo.psd"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\mo.png",
+      "PackagePath": "staticwebassets\\images\\products\\mo.png"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\singleproduct\\a54.jfif",
+      "PackagePath": "staticwebassets\\images\\singleproduct\\a54.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\singleproduct\\apple-16-blue.jfif",
+      "PackagePath": "staticwebassets\\images\\singleproduct\\apple-16-blue.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\singleproduct\\apple-16.jfif",
+      "PackagePath": "staticwebassets\\images\\singleproduct\\apple-16.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\singleproduct\\apple-pro.jfif",
+      "PackagePath": "staticwebassets\\images\\singleproduct\\apple-pro.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\account.js",
+      "PackagePath": "staticwebassets\\js\\account.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\cart.js",
+      "PackagePath": "staticwebassets\\js\\cart.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\chatonline.js",
+      "PackagePath": "staticwebassets\\js\\chatonline.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\counter.js",
+      "PackagePath": "staticwebassets\\js\\counter.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\counterdisount.js",
+      "PackagePath": "staticwebassets\\js\\counterdisount.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\gallery-img.js",
+      "PackagePath": "staticwebassets\\js\\gallery-img.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\homepage.js",
+      "PackagePath": "staticwebassets\\js\\homepage.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\mega-menu.js",
+      "PackagePath": "staticwebassets\\js\\mega-menu.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\progress-amount.js",
+      "PackagePath": "staticwebassets\\js\\progress-amount.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\scrollrightleft.js",
+      "PackagePath": "staticwebassets\\js\\scrollrightleft.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\shop.js",
+      "PackagePath": "staticwebassets\\js\\shop.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\signin.js",
+      "PackagePath": "staticwebassets\\js\\signin.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\js\\slider.js",
+      "PackagePath": "staticwebassets\\js\\slider.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Shop.web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Shop.web.props",
+      "PackagePath": "build\\Shop.web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Shop.web.props",
+      "PackagePath": "buildMultiTargeting\\Shop.web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Shop.web.props",
+      "PackagePath": "buildTransitive\\Shop.web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

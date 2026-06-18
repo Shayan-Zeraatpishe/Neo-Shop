@@ -1,0 +1,79 @@
+@model Shop.Domain.Entities.Article
+@{
+    Layout = null;
+    ViewData["Title"] = "ویرایش مقاله";
+}
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/admin/css/admin.css">
+    <link href="~/admin/css/editarticle.css" rel="stylesheet" />
+    <title>@(ViewData["Title"] ?? "پنل ادمین")</title>
+</head>
+<body>
+
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+
+        <partial name="_listnav" />
+
+        <!-- Start Container Body Panel -->
+        <section class="container-body">
+            <header class="header-sec">
+                <h1>ویرایش مقاله</h1>
+
+
+                <div class="edit-article-t">
+
+                    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" asp-for="Id" />
+                        <div asp-validation-summary="All" style="color:red;"></div>
+
+                        <div class="form-group">
+                            <label asp-for="Title"></label>
+                            <input asp-for="Title" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Summary"></label>
+                            <textarea asp-for="Summary" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Content"></label>
+                            <textarea asp-for="Content" rows="8"></textarea>
+                        </div>
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                        {
+                            <p><img src="@Model.ImageUrl" alt="" style="max-width:200px;" /></p>
+                        }
+                        <div class="form-group">
+                            <label>تصویر جدید</label>
+                            <input type="file" name="imageFile" accept="image/*" />
+                        </div>
+                        <div class="form-group">
+                            <label><input asp-for="IsPublished" type="checkbox" /> منتشر شود</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-success">ذخیره</button>
+                        <a asp-action="Index">انصراف</a>
+                    </form>
+                </div>
+
+            </header>
+
+        </section>
+        <!-- End Container Body Panel -->
+
+    </section>
+
+    <script src="~/admin/js/menu-admin.js"></script>
+
+
+</body>
+</html>
+
+

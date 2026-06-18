@@ -1,0 +1,11 @@
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\bin\Debug\net8.0\Shop.Domain.deps.json
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\bin\Debug\net8.0\Shop.Domain.dll
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\bin\Debug\net8.0\Shop.Domain.pdb
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.AssemblyInfoInputs.cache
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.AssemblyInfo.cs
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.dll
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\refint\Shop.Domain.dll
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.pdb
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\ref\Shop.Domain.dll

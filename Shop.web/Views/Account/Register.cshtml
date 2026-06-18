@@ -1,0 +1,67 @@
+@model RegisterViewModel
+@{
+    Layout = null;
+    ViewData["Title"] = "ثبت نام";
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/signin2.css">
+    <title>ثبت نام</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <section class="container-login">
+            <section class="sec-right">
+                <h1>ثبت نام</h1>
+                <p>برای ثبت نام اطلاعات خود را وارد کنید</p>
+
+                <form asp-action="Register" method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert" style="display:block;color:red;"></div>
+
+                    <div class="inp">
+                        <label asp-for="FullName">نام و نام خانوادگی</label>
+                        <input asp-for="FullName" class="numberphone" />
+                        <span asp-validation-for="FullName" class="alert"></span>
+                    </div>
+
+                    <div class="inp">
+                        <label asp-for="PhoneNumber">شماره موبایل</label>
+                        <input asp-for="PhoneNumber" class="numberphone" />
+                        <span asp-validation-for="PhoneNumber" class="alert"></span>
+                    </div>
+
+                    <div class="inp">
+                        <label asp-for="Email">ایمیل (اختیاری)</label>
+                        <input asp-for="Email" class="numberphone" />
+                    </div>
+
+                    <div class="inp">
+                        <label asp-for="Password">رمز عبور</label>
+                        <input asp-for="Password" class="numberphone" />
+                        <span asp-validation-for="Password" class="alert"></span>
+                    </div>
+
+                    <div class="inp">
+                        <label asp-for="ConfirmPassword">تکرار رمز عبور</label>
+                        <input asp-for="ConfirmPassword" class="numberphone" />
+                        <span asp-validation-for="ConfirmPassword" class="alert"></span>
+                    </div>
+
+                    <div class="submit">
+                        <button type="submit">ثبت نام</button>
+                    </div>
+                </form>
+
+                <p class="sign-person">
+                    <a asp-action="Login">ورود به حساب</a>
+                </p>
+            </section>
+            <section class="sec-left"></section>
+        </section>
+    </div>
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>

@@ -1,0 +1,184 @@
+﻿@model Shop.web.Areas.Admin.ViewModels.Comments.AdminCommentsIndexViewModel
+@using Shop.web.Helpers
+@{
+    Layout = null;
+    ViewData["Title"] = "لیست دیدگاه‌ها";
+    var fromDate = Model.Filter.FromDate?.ToString("yyyy-MM-dd");
+    var toDate = Model.Filter.ToDate?.ToString("yyyy-MM-dd");
+}
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/admin/css/listcomment.css" rel="stylesheet" />
+    <title>@(ViewData["Title"] ?? "پنل ادمین")</title>
+</head>
+<body>
+
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+        <partial name="_listnav" />
+
+        <section class="container-body">
+            <header class="header-sec">
+                <h1>لیست کامنت ها</h1>
+            </header>
+
+            @if (TempData["Success"] != null)
+            {
+                <p style="color:green;margin:1rem 0;">@TempData["Success"]</p>
+            }
+
+            <section class="filter">
+                <form method="get" asp-action="Index" asp-controller="Comment" asp-area="Admin" class="sec-right" style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;">
+                    <input type="number" name="CommentId" class="inp-number" placeholder="شناسه دیدگاه" value="@Model.Filter.CommentId" />
+                    <input type="text" name="ProductName" class="inp-search" placeholder="نام محصول" value="@Model.Filter.ProductName" />
+                    <input type="text" name="UserName" class="inp-search" placeholder="نام کاربر" value="@Model.Filter.UserName" />
+
+                    <select name="Status" class="select-order">
+                        <option value="">همه وضعیت‌ها</option>
+                        @foreach (var st in Enum.GetValues<Shop.Domain.Enums.CommentStatus>())
+                        {
+                            <option value="@((int)st)" selected="@(Model.Filter.Status == st)">@CommentStatusHelper.GetPersianLabel(st)</option>
+                        }
+                    </select>
+
+                    <input type="date" name="FromDate" class="inp-date" value="@fromDate" />
+                    <input type="date" name="ToDate" class="inp-date" value="@toDate" />
+
+                    <input type="hidden" name="PageSize" value="@Model.Filter.PageSize" />
+                    <input type="hidden" name="SortBy" value="@Model.Filter.SortBy" />
+                    <input type="hidden" name="SortDescending" value="@Model.Filter.SortDescending" />
+
+                    <button type="submit" class="btn btn-fillter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill="#ffffff" d="M96 128C83.1 128 71.4 135.8 66.4 147.8C61.4 159.8 64.2 173.5 73.4 182.6L256 365.3L256 480C256 488.5 259.4 496.6 265.4 502.6L329.4 566.6C338.6 575.8 352.3 578.5 364.3 573.5C376.3 568.5 384 556.9 384 544L384 365.3L566.6 182.7C575.8 173.5 578.5 159.8 573.5 147.8C568.5 135.8 556.9 128 544 128L96 128z" />
+                        </svg>
+                        فیلتر
+                    </button>
+                </form>
+            </section>
+
+            <section class="container-comment">
+                @if (!Model.Comments.Any())
+                {
+                    <p>دیدگاهی یافت نشد.</p>
+                }
+                @foreach (var comment in Model.Comments)
+                {
+                    <section class="sec-comment">
+                        <section class="sec-top">
+                            <h4 class="fullname">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                                    <path fill="#222222" d="M320 312C253.7 312 200 258.3 200 192C200 125.7 253.7 72 320 72C386.3 72 440 125.7 440 192C440 258.3 386.3 312 320 312zM289.5 368L350.5 368C360.2 368 368 375.8 368 385.5C368 389.7 366.5 393.7 363.8 396.9L336.4 428.9L367.4 544L368 544L402.6 405.5C404.8 396.8 413.7 391.5 422.1 394.7C484 418.3 528 478.3 528 548.5C528 563.6 515.7 575.9 500.6 575.9L139.4 576C124.3 576 112 563.7 112 548.6C112 478.4 156 418.4 217.9 394.8C226.3 391.6 235.2 396.9 237.4 405.6L272 544.1L272.6 544.1L303.6 429L276.2 397C273.5 393.8 272 389.8 272 385.6C272 375.9 279.8 368.1 289.5 368.1z" />
+                                </svg>
+                                @comment.AuthorName
+                            </h4>
+                            <h4 class="phonenumber">
+                                <span>محصول: </span><span class="phone">@comment.ProductName</span>
+                            </h4>
+                            @if (!string.IsNullOrWhiteSpace(comment.UserPhone))
+                            {
+                                <h4 class="phonenumber"><span>شماره تماس: </span><span class="phone">@comment.UserPhone</span></h4>
+                            }
+                            <p class="dec-comment">@comment.Content</p>
+                            <p><strong>وضعیت:</strong> @CommentStatusHelper.GetPersianLabel(comment.Status)</p>
+                            @if (!string.IsNullOrWhiteSpace(comment.AdminReply))
+                            {
+                                <p><strong>پاسخ:</strong> @comment.AdminReply</p>
+                            }
+                        </section>
+                        <section class="sec-bottom">
+                            @if (comment.Status != Shop.Domain.Enums.CommentStatus.Approved)
+                            {
+                                <form asp-action="Approve" method="post" style="display:inline;">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@comment.Id" />
+                                    <button type="submit" class="btn-success" style="border:none;cursor:pointer;">تأیید</button>
+                                </form>
+                            }
+                            @if (comment.Status != Shop.Domain.Enums.CommentStatus.Rejected)
+                            {
+                                <form asp-action="Reject" method="post" style="display:inline;">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@comment.Id" />
+                                    <button type="submit" class="btn-danger" style="border:none;cursor:pointer;">رد</button>
+                                </form>
+                            }
+                            <a class="btn-info btn-rep" asp-action="Details" asp-route-id="@comment.Id">جزئیات / پاسخ</a>
+                            <form asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('آیا از حذف این دیدگاه مطمئن هستید؟');">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@comment.Id" />
+                                <button type="submit" class="btn-danger" style="border:none;cursor:pointer;">حذف</button>
+                            </form>
+                            <p class="sec-date"><span>تاریخ: </span><span class="date">@comment.CreatedAtUtc.ToLocalTime().ToString("yyyy/MM/dd HH:mm")</span></p>
+                        </section>
+                    </section>
+                }
+            </section>
+
+            @if (Model.TotalPages > 1)
+            {
+                <nav class="pagging" style="margin:1rem 0;">
+                    <ul class="list-count" style="display:flex;gap:.5rem;list-style:none;padding:0;">
+                        @if (Model.HasPrevious)
+                        {
+                            <li>
+                                <a asp-action="Index"
+                                   asp-route-CommentId="@Model.Filter.CommentId"
+                                   asp-route-ProductName="@Model.Filter.ProductName"
+                                   asp-route-UserName="@Model.Filter.UserName"
+                                   asp-route-Status="@Model.Filter.Status"
+                                   asp-route-FromDate="@fromDate"
+                                   asp-route-ToDate="@toDate"
+                                   asp-route-PageSize="@Model.Filter.PageSize"
+                                   asp-route-SortBy="@Model.Filter.SortBy"
+                                   asp-route-SortDescending="@Model.Filter.SortDescending"
+                                   asp-route-PageNumber="@(Model.PageNumber - 1)">قبلی</a>
+                            </li>
+                        }
+                        @for (int p = 1; p <= Model.TotalPages; p++)
+                        {
+                            <li>
+                                <a asp-action="Index"
+                                   asp-route-CommentId="@Model.Filter.CommentId"
+                                   asp-route-ProductName="@Model.Filter.ProductName"
+                                   asp-route-UserName="@Model.Filter.UserName"
+                                   asp-route-Status="@Model.Filter.Status"
+                                   asp-route-FromDate="@fromDate"
+                                   asp-route-ToDate="@toDate"
+                                   asp-route-PageSize="@Model.Filter.PageSize"
+                                   asp-route-SortBy="@Model.Filter.SortBy"
+                                   asp-route-SortDescending="@Model.Filter.SortDescending"
+                                   asp-route-PageNumber="@p"
+                                   style="@(p == Model.PageNumber ? "font-weight:bold;" : null)">@p</a>
+                            </li>
+                        }
+                        @if (Model.HasNext)
+                        {
+                            <li>
+                                <a asp-action="Index"
+                                   asp-route-CommentId="@Model.Filter.CommentId"
+                                   asp-route-ProductName="@Model.Filter.ProductName"
+                                   asp-route-UserName="@Model.Filter.UserName"
+                                   asp-route-Status="@Model.Filter.Status"
+                                   asp-route-FromDate="@fromDate"
+                                   asp-route-ToDate="@toDate"
+                                   asp-route-PageSize="@Model.Filter.PageSize"
+                                   asp-route-SortBy="@Model.Filter.SortBy"
+                                   asp-route-SortDescending="@Model.Filter.SortDescending"
+                                   asp-route-PageNumber="@(Model.PageNumber + 1)">بعدی</a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            }
+        </section>
+    </section>
+
+    <script src="~/admin/js/listcomment.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+﻿@model Shop.web.Areas.Admin.ViewModels.Products.AdminProductCreateEditViewModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "ویرایش محصول";
+}
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/admin/css/admin.css">
+    <link rel="stylesheet" href="~/admin/css/addproduct.css">
+
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+        <partial name="_listnav" />
+
+        <section class="container-body">
+            <header class="header-sec">
+                <h1>ویرایش محصول</h1>
+                <div class="admin-form-card">
+                    <form asp-action="Edit" asp-controller="Products" asp-area="Admin" method="post" enctype="multipart/form-data">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="All" style="color:red;"></div>
+
+                        <input asp-for="Id" type="hidden" />
+
+                        <div class="form-group">
+                            <label asp-for="Name">نام محصول</label>
+                            <input asp-for="Name" class="input" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="ShortDescription">توضیح کوتاه</label>
+                            <input asp-for="ShortDescription" class="input" />
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Description">توضیح محصول</label>
+                            <textarea asp-for="Description" class="input" rows="6"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Price">قیمت محصول</label>
+                            <input asp-for="Price" class="input" type="number" step="0.01" />
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="DiscountPrice">قیمت پس از تخفیف</label>
+                            <input asp-for="DiscountPrice" class="input" type="number" step="0.01" />
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Brand">برند کالا</label>
+                            <input asp-for="Brand" class="input" />
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="CategoryId">دسته بندی محصول</label>
+                            <select asp-for="CategoryId" asp-items="ViewBag.Categories as Microsoft.AspNetCore.Mvc.Rendering.SelectList" class="select-order">
+                                <option value="">انتخاب دسته...</option>
+                            </select>
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Stock">تعداد</label>
+                            <input asp-for="Stock" class="input" type="number" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>وضعیت انتشار</label>
+                            <div>
+                                <label><input asp-for="IsActive" type="checkbox" /> فعال</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label><input asp-for="IsFeatured" type="checkbox" /> ویژه</label>
+                            <label><input asp-for="IsSpecialOffer" type="checkbox" /> پیشنهاد ویژه</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Specifications">مشخصات محصول</label>
+                            <textarea asp-for="Specifications" class="input" rows="3"></textarea>
+                        </div>
+
+                        <hr />
+                        <h3>SEO</h3>
+
+                        <div class="form-group">
+                            <label asp-for="SeoTitle">اسم مناسب سئو</label>
+                            <input asp-for="SeoTitle" class="input" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SeoDescription">توضیح سئو</label>
+                            <textarea asp-for="SeoDescription" class="input" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SeoKeywords">کلمات کلیدی</label>
+                            <input asp-for="SeoKeywords" class="input" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SeoCanonicalUrl">آدرس صفحه محصول</label>
+                            <input asp-for="SeoCanonicalUrl" class="input" />
+                        </div>
+
+                        <hr />
+                        <h3>تصاویر</h3>
+
+                        @if (!string.IsNullOrWhiteSpace(Model.MainImageUrl))
+                        {
+                            <div style="margin-bottom:1rem;">
+                                <p>تصویر اصلی فعلی:</p>
+                                <img src="@Model.MainImageUrl" alt="" style="width:120px;height:120px;object-fit:cover;" />
+                            </div>
+                        }
+
+                        <div class="form-group">
+                            <label>تصویر اصلی جدید (اختیاری)</label>
+                            <input type="file" name="MainImageFile" accept="image/*" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>افزودن تصاویر جدید به گالری</label>
+                            <input type="file" name="GalleryImageFiles" accept="image/*" multiple />
+                        </div>
+
+                        @if (Model.ExistingImages.Count > 0)
+                        {
+                            <div class="form-group">
+                                <label>حذف تصاویر موجود (اختیاری)</label>
+                                <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:.5rem;">
+                                    @foreach (var img in Model.ExistingImages.OrderBy(x => x.DisplayOrder))
+                                    {
+                                        <div style="border:1px solid #ddd;padding:.5rem;border-radius:8px;">
+                                            <label style="display:flex;flex-direction:column;gap:.25rem;">
+                                                <input type="checkbox" name="DeleteImageIds" value="@img.Id" />
+                                                <img src="@img.ImageUrl" alt="" style="width:90px;height:90px;object-fit:cover;" />
+                                                <span style="font-size:.85rem;">@img.DisplayOrder</span>
+                                            </label>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                        <hr />
+                       
+                        @if (!string.IsNullOrWhiteSpace(Model.DigitalFileOriginalName))
+                        {
+                            <p>فایل فعلی: @Model.DigitalFileOriginalName</p>
+                        }
+
+
+                        <button type="submit" class="btn btn-red">ذخیره تغییرات</button>
+                        <a asp-action="Index" asp-controller="Products" asp-area="Admin" class="btn btn-info">بازگشت</a>
+                    </form>
+                </div>
+            </header>
+        </section>
+    </section>
+
+    <script src="~/admin/js/menu-admin.js"></script>
+</body>
+</html>
+

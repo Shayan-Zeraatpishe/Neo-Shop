@@ -1,0 +1,251 @@
+﻿@model Shop.web.Areas.Admin.ViewModels.Products.AdminProductsIndexViewModel
+@using Shop.Domain.Entities
+
+@{
+    Layout = null;
+    ViewData["Title"] = "لیست محصولات";
+}
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/admin/css/admin.css">
+    <link href="~/admin/css/listproduct.css" rel="stylesheet" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+        <partial name="_listnav" />
+
+        <section class="container-body">
+            <header class="header-sec">
+                <h1>لیست محصولات</h1>
+                <p><a asp-action="Create" asp-controller="Products" asp-area="Admin" class="btn btn-success">افزودن محصول</a></p>
+            </header>
+
+            @if (TempData["Error"] != null)
+            {
+                <div style="background:#f8d7da;padding:.75rem;border-radius:6px;margin:1rem 0;">
+                    @TempData["Error"]
+                </div>
+            }
+
+            <section class="filter">
+                <form method="get" asp-action="Index" asp-controller="Products" asp-area="Admin">
+                    <input type="text" name="SearchTerm" class="inp-search" placeholder="جستجو نام/توضیحات" value="@Model.Filter.SearchTerm" />
+
+                    <select name="IsActive" class="select-order">
+                        <option value="">همه وضعیت‌ها</option>
+                        @if (Model.Filter.IsActive == true)
+                        {
+                            <option value="true" selected="selected">فعال</option>
+                        }
+                        else
+                        {
+                            <option value="true">فعال</option>
+                        }
+
+                        @if (Model.Filter.IsActive == false)
+                        {
+                            <option value="false" selected="selected">غیرفعال</option>
+                        }
+                        else
+                        {
+                            <option value="false">غیرفعال</option>
+                        }
+                    </select>
+
+                    <select name="CategoryId" class="select-order">
+                        <option value="">همه دسته‌ها</option>
+                        @foreach (var c in Model.Categories)
+                        {
+                            if (Model.Filter.CategoryId == c.Id)
+                            {
+                                <option value="@c.Id" selected="selected">@c.Name</option>
+                            }
+                            else
+                            {
+                                <option value="@c.Id">@c.Name</option>
+                            }
+                        }
+                    </select>
+
+                    <select name="SortBy" class="select-order">
+                        @if (Model.Filter.SortBy == "CreatedAt")
+                        {
+                            <option value="CreatedAt" selected="selected">جدیدترین</option>
+                        }
+                        else
+                        {
+                            <option value="CreatedAt">جدیدترین</option>
+                        }
+
+                        @if (Model.Filter.SortBy == "Name")
+                        {
+                            <option value="Name" selected="selected">نام محصول</option>
+                        }
+                        else
+                        {
+                            <option value="Name">نام محصول</option>
+                        }
+
+                        @if (Model.Filter.SortBy == "Price")
+                        {
+                            <option value="Price" selected="selected">قیمت</option>
+                        }
+                        else
+                        {
+                            <option value="Price">قیمت</option>
+                        }
+
+                        @if (Model.Filter.SortBy == "Stock")
+                        {
+                            <option value="Stock" selected="selected">موجودی</option>
+                        }
+                        else
+                        {
+                            <option value="Stock">موجودی</option>
+                        }
+                    </select>
+
+                    <select name="SortDescending" class="select-order">
+                        @if (Model.Filter.SortDescending)
+                        {
+                            <option value="true" selected="selected">نزولی</option>
+                            <option value="false">صعودی</option>
+                        }
+                        else
+                        {
+                            <option value="true">نزولی</option>
+                            <option value="false" selected="selected">صعودی</option>
+                        }
+                    </select>
+
+                    <input type="hidden" name="PageSize" value="@Model.Filter.PageSize" />
+
+                    <button type="submit" class="btn btn-fillter">اعمال فیلتر</button>
+                </form>
+            </section>
+
+            <section class="orders-table" style="margin-top:1rem;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>تصویر</th>
+                            <th>نام</th>
+                            <th>دسته</th>
+                            <th>قیمت</th>
+                            <th>تخفیف</th>
+                            <th>موجودی</th>
+                            <th>وضعیت</th>
+                            <th>عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Products.Count == 0)
+                        {
+                            <tr>
+                                <td colspan="8">محصولی یافت نشد.</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            @foreach (var p in Model.Products)
+                            {
+                                <tr>
+                                    <td>
+                                        @if (!string.IsNullOrWhiteSpace(p.MainImageUrl))
+                                        {
+                                            <img src="@p.MainImageUrl" alt="" style="width:60px;height:60px;object-fit:cover;" />
+                                        }
+                                        else
+                                        {
+                                            <span>-</span>
+                                        }
+                                    </td>
+                                    <td>@p.Name</td>
+                                    <td>@p.CategoryName</td>
+                                    <td>@p.Price.ToString("N0")</td>
+                                    <td>@(p.DiscountPrice.HasValue ? p.DiscountPrice.Value.ToString("N0") : "-")</td>
+                                    <td>@p.Stock</td>
+                                    <td>@(p.IsActive ? "فعال" : "غیرفعال")</td>
+                                    <td>
+                                        <a asp-action="Details" asp-controller="Products" asp-area="Admin" asp-route-id="@p.Id" class="btn btn-info">جزئیات</a>
+                                        <a asp-action="Edit" asp-controller="Products" asp-area="Admin" asp-route-id="@p.Id" class="btn btn-primary">ویرایش</a>
+                                        <form asp-action="Delete" asp-controller="Products" asp-area="Admin" asp-route-id="@p.Id" method="post" style="display:inline;" onsubmit="return confirm('حذف ایمن انجام شود؟');">
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="btn btn-danger">حذف</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+
+                @if (Model.TotalPages > 1)
+                {
+                    <nav class="pagging" style="margin-top:1rem;">
+                        <ul class="list-count">
+                            @if (Model.HasPrevious)
+                            {
+                                <li>
+                                    <a asp-action="Index"
+                                       asp-route-SearchTerm="@Model.Filter.SearchTerm"
+                                       asp-route-IsActive="@Model.Filter.IsActive"
+                                       asp-route-CategoryId="@Model.Filter.CategoryId"
+                                       asp-route-SortBy="@Model.Filter.SortBy"
+                                       asp-route-SortDescending="@Model.Filter.SortDescending"
+                                       asp-route-PageSize="@Model.Filter.PageSize"
+                                       asp-route-PageNumber="@(Model.PageNumber - 1)">
+                                        قبلی
+                                    </a>
+                                </li>
+                            }
+
+                            @for (int p = 1; p <= Model.TotalPages; p++)
+                            {
+                                <li class="@(p == Model.PageNumber ? "active" : null)">
+                                    <a asp-action="Index"
+                                       asp-route-SearchTerm="@Model.Filter.SearchTerm"
+                                       asp-route-IsActive="@Model.Filter.IsActive"
+                                       asp-route-CategoryId="@Model.Filter.CategoryId"
+                                       asp-route-SortBy="@Model.Filter.SortBy"
+                                       asp-route-SortDescending="@Model.Filter.SortDescending"
+                                       asp-route-PageSize="@Model.Filter.PageSize"
+                                       asp-route-PageNumber="@p">
+                                        @p
+                                    </a>
+                                </li>
+                            }
+
+                            @if (Model.HasNext)
+                            {
+                                <li>
+                                    <a asp-action="Index"
+                                       asp-route-SearchTerm="@Model.Filter.SearchTerm"
+                                       asp-route-IsActive="@Model.Filter.IsActive"
+                                       asp-route-CategoryId="@Model.Filter.CategoryId"
+                                       asp-route-SortBy="@Model.Filter.SortBy"
+                                       asp-route-SortDescending="@Model.Filter.SortDescending"
+                                       asp-route-PageSize="@Model.Filter.PageSize"
+                                       asp-route-PageNumber="@(Model.PageNumber + 1)">
+                                        بعدی
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </nav>
+                }
+            </section>
+        </section>
+    </section>
+
+    <script src="~/admin/js/menu-admin.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+﻿@model dynamic
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/admin/css/admin.css">
+    <title>@(ViewData["Title"] ?? "پنل ادمین")</title>
+</head>
+<body>
+
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+
+        <partial name="_listnav" />
+
+        <!-- Start Container Body Panel -->
+        <section class="container-body">
+            <header class="header-sec">
+                <h1>صفحه اصلی</h1>
+            </header>
+
+        </section>
+        <!-- End Container Body Panel -->
+
+    </section>
+
+    <script src="~/admin/js/menu-admin.js"></script>
+
+
+</body>
+</html>
+
+

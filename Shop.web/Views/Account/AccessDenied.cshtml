@@ -1,0 +1,25 @@
+@{
+    Layout = null;
+    ViewData["Title"] = "دسترسی غیرمجاز";
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/account.css">
+    <title>دسترسی غیرمجاز</title>
+    <style>
+        .access-denied { max-width: 480px; margin: 4rem auto; text-align: center; padding: 2rem; }
+        .access-denied h1 { color: #e74c3c; margin-bottom: 1rem; }
+        .access-denied a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <section class="access-denied">
+        <h1>دسترسی غیرمجاز</h1>
+        <p>شما مجوز دسترسی به این صفحه را ندارید.</p>
+        <p><a asp-controller="Home" asp-action="Index">بازگشت به صفحه اصلی</a></p>
+    </section>
+</body>
+</html>

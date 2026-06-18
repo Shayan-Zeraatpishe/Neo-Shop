@@ -1,0 +1,245 @@
+@model Shop.web.Areas.Admin.ViewModels.Products.AdminProductDetailsViewModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "جزئیات محصول";
+}
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/admin/css/admin.css">
+    <link rel="stylesheet" href="~/admin/css/detailproduct.css">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+        <partial name="_listnav" />
+
+        <section class="container-body">
+            <header class="header-sec">
+                <h1>جزئیات محصول: @Model.Name</h1>
+            </header>
+
+            <div class="product-details-card">
+
+                
+                <div class="product-header">
+                    <div>
+                        <h1 class="product-title">@Model.Name</h1>
+                        <div class="product-slug">@Model.Slug</div>
+                    </div>
+
+                    <div>
+                        <span class="badge @(Model.IsActive ? "badge-success" : "badge-danger")">
+                            @(Model.IsActive ? "فعال" : "غیرفعال")
+                        </span>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+                        <span>شناسه</span>
+                        <strong>@Model.Id</strong>
+                    </div>
+
+                    <div class="info-card">
+                        <span>دسته بندی</span>
+                        <strong>@Model.CategoryName</strong>
+                    </div>
+
+                    <div class="info-card">
+                        <span>برند</span>
+                        <strong>@Model.Brand</strong>
+                    </div>
+
+                    <div class="info-card">
+                        <span>موجودی</span>
+                        <strong>@Model.Stock</strong>
+                    </div>
+
+                </div>
+
+                <div class="content-section">
+
+                    <h3>اطلاعات قیمت</h3>
+
+                    <div class="price-box">
+
+                        <div class="price-card">
+                            <span>قیمت اصلی</span>
+                            <div class="price-value">
+                                @Model.Price.ToString("N0")
+                            </div>
+                            <small>تومان</small>
+                        </div>
+
+                        <div class="price-card">
+                            <span>قیمت با تخفیف</span>
+                            <div class="price-value">
+                                @(Model.DiscountPrice?.ToString("N0") ?? "-")
+                            </div>
+                            <small>تومان</small>
+                        </div>
+
+                        <div class="price-card">
+                            <span>قیمت نهایی</span>
+                            <div class="price-value">
+                                @Model.EffectivePrice.ToString("N0")
+                            </div>
+                            <small>تومان</small>
+                        </div>
+
+                    </div>
+
+                    <div style="margin-top:20px;">
+                        <span class="badge @(Model.IsFeatured ? "badge-warning" : "badge-danger")">
+                            ویژه: @(Model.IsFeatured ? "بله" : "خیر")
+                        </span>
+
+                        <span class="badge @(Model.IsSpecialOffer ? "badge-success" : "badge-danger")">
+                            پیشنهاد ویژه: @(Model.IsSpecialOffer ? "بله" : "خیر")
+                        </span>
+                    </div>
+
+                </div>
+
+                @if (!string.IsNullOrWhiteSpace(Model.ShortDescription))
+                {
+                    <div class="content-section">
+                        <h3>معرفی کوتاه</h3>
+                        <p>@Model.ShortDescription</p>
+                    </div>
+                }
+
+                @if (!string.IsNullOrWhiteSpace(Model.Description))
+                {
+                    <div class="content-section">
+                        <h3>توضیحات محصول</h3>
+                        <p>@Model.Description</p>
+                    </div>
+                }
+
+                @if (!string.IsNullOrWhiteSpace(Model.Specifications))
+                {
+                    <div class="content-section">
+                        <h3>مشخصات فنی</h3>
+                        <p>@Model.Specifications</p>
+                    </div>
+                }
+
+                <div class="content-section">
+
+                    <h3>گالری تصاویر</h3>
+
+                    <div class="image-gallery">
+
+                        @if (!string.IsNullOrWhiteSpace(Model.MainImageUrl))
+                        {
+                            <div class="image-item">
+                                <img src="@Model.MainImageUrl" alt="">
+                                <div class="caption">
+                                    تصویر اصلی
+                                </div>
+                            </div>
+                        }
+
+                        @foreach (var img in Model.Images.OrderBy(x => x.DisplayOrder))
+                        {
+                            <div class="image-item">
+                                <img src="@img.ImageUrl" alt="">
+                                <div class="caption">
+                                    تصویر شماره @img.DisplayOrder
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+
+                </div>
+
+                <div class="content-section">
+
+                    <h3>اطلاعات SEO</h3>
+
+                    <div class="seo-box">
+
+                        <div class="seo-row">
+                            <strong>عنوان سئو</strong>
+                            <div>@Model.SeoTitle</div>
+                        </div>
+
+                        <div class="seo-row">
+                            <strong>توضیحات سئو</strong>
+                            <div>@Model.SeoDescription</div>
+                        </div>
+
+                        <div class="seo-row">
+                            <strong>کلمات کلیدی</strong>
+                            <div>@Model.SeoKeywords</div>
+                        </div>
+
+                        <div class="seo-row">
+                            <strong>Canonical URL</strong>
+                            <div>@Model.SeoCanonicalUrl</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="content-section">
+
+                    <h3>فایل دیجیتال</h3>
+
+                    <div class="info-grid">
+
+                        <div class="info-card">
+                            <span>نام فایل</span>
+                            <strong>@Model.DigitalFileOriginalName</strong>
+                        </div>
+
+                        <div class="info-card">
+                            <span>نام ذخیره سازی</span>
+                            <strong>@Model.DigitalFileName</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="details-actions">
+
+                    <a asp-action="Edit"
+                       asp-controller="Products"
+                       asp-area="Admin"
+                       asp-route-id="@Model.Id"
+                       class="btn btn-primary">
+                        ویرایش محصول
+                    </a>
+
+                    <a asp-action="Index"
+                       asp-controller="Products"
+                       asp-area="Admin"
+                       class="btn btn-info">
+                        بازگشت
+                    </a>
+
+                </div>
+               
+
+            </div>
+
+
+        </section>
+    </section>
+    
+    <script src="~/admin/js/menu-admin.js"></script>
+</body>
+</html>
+

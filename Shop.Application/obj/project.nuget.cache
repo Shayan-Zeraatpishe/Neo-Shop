@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "A0Vf7BEWeWc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Application\\Shop.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shayan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

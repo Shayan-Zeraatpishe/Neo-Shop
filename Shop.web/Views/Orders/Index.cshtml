@@ -1,0 +1,59 @@
+@model IReadOnlyList<Shop.Domain.Entities.Order>
+@using Shop.web.Helpers
+@{
+    Layout = null;
+    ViewData["Title"] = "سفارش‌های من";
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/account.css">
+    <title>سفارش‌های من</title>
+</head>
+<body>
+    <section class="container-orders right-sec" style="max-width:900px;margin:2rem auto;">
+        <header class="header-account"><h1>سفارش‌های من</h1></header>
+
+        <nav style="margin-bottom:1rem;">
+            <a asp-controller="Account" asp-action="Index">داشبورد</a> |
+            <a asp-controller="Profile" asp-action="Index">پروفایل</a>
+        </nav>
+
+        @if (!Model.Any())
+        {
+            <p>هنوز سفارشی ثبت نکرده‌اید.</p>
+            <a asp-controller="Shop" asp-action="Index">مشاهده فروشگاه</a>
+        }
+        else
+        {
+            <table class="table" style="width:100%;">
+                <tr>
+                    <th>کد سفارش</th>
+                    <th>تاریخ</th>
+                    <th>وضعیت</th>
+                    <th>مجموع</th>
+                    <th>عملیات</th>
+                </tr>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.OrderNumber</td>
+                        <td>@order.CreatedAt.ToString("yyyy/MM/dd")</td>
+                        <td><span class="@OrderStatusHelper.GetCssClass(order.Status)">@OrderStatusHelper.GetPersianLabel(order.Status)</span></td>
+                        <td>@order.TotalAmount.ToString("N0") تومان</td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@order.Id" class="btn-detail">مشاهده</a>
+                            @if (order.Status is Shop.Domain.Enums.OrderStatus.Paid or Shop.Domain.Enums.OrderStatus.Completed)
+                            {
+                                <a asp-controller="Checkout" asp-action="Invoice" asp-route-id="@order.Id" class="btn-factor">فاکتور</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+        }
+    </section>
+</body>
+</html>

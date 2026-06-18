@@ -1,0 +1,100 @@
+@model Shop.web.ViewModels.OrderCheckoutViewModel
+@{
+    Layout = null;
+    var order = Model.Order;
+    var items = order?.Items?.ToList() ?? new List<Shop.Domain.Entities.OrderItem>();
+    ViewData["Title"] = "تسویه حساب";
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/account-settlement.css">
+    <title>تسویه حساب</title>
+</head>
+<body>
+    <section class="container">
+        @if (TempData["Error"] != null)
+        {
+            <div style="background:#f8d7da;padding:.75rem;border-radius:6px;margin:1rem 0;">@TempData["Error"]</div>
+        }
+
+        @if (order == null)
+        {
+            <div style="background:#fff3cd;padding:.75rem;border-radius:6px;margin:1rem 0;">سفارش یافت نشد.</div>
+        }
+        else
+        {
+            <form asp-controller="Orders" asp-action="Checkout" asp-route-orderId="@order.Id" method="post">
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="All" style="color:red;margin:1rem 0;"></div>
+
+                <section class="container-fluid">
+                    <section class="sec-right">
+                        <header>جزئیات پرداخت</header>
+
+                        <div class="sec-input">
+                            <div class="input">
+                                <label asp-for="Checkout.FullName"></label>
+                                <input asp-for="Checkout.FullName" type="text" />
+                                <span asp-validation-for="Checkout.FullName"></span>
+                            </div>
+                        </div>
+                        <div class="sec-input">
+                            <div class="input">
+                                <label asp-for="Checkout.Email"></label>
+                                <input asp-for="Checkout.Email" type="email" />
+                                <span asp-validation-for="Checkout.Email"></span>
+                            </div>
+                        </div>
+                        <div class="sec-input">
+                            <div class="input">
+                                <label asp-for="Checkout.PhoneNumber"></label>
+                                <input asp-for="Checkout.PhoneNumber" type="tel" />
+                                <span asp-validation-for="Checkout.PhoneNumber"></span>
+                            </div>
+                        </div>
+                        <div class="sec-input">
+                            <div class="input">
+                                <label asp-for="Checkout.Address"></label>
+                                <input asp-for="Checkout.Address" type="text" />
+                            </div>
+                        </div>
+                        <div class="sec-input">
+                            <div class="input">
+                                <label asp-for="Checkout.Notes"></label>
+                                <input asp-for="Checkout.Notes" type="text" />
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sec-left">
+                        <section class="box-pay">
+                            <header>سفارش شما</header>
+                            <section class="body">
+                                @if (items.Any())
+                                {
+                                    foreach (var currentItem in items)
+                                    {
+                                        <p>محصول: <strong>@currentItem.ProductName</strong></p>
+                                        <p>تعداد: <strong>@currentItem.Quantity</strong></p>
+                                        <p>قیمت واحد: <strong>@currentItem.UnitPrice.ToString("N0")</strong> تومان</p>
+                                        <p>مجموع آیتم: <strong>@currentItem.TotalPrice.ToString("N0")</strong> تومان</p>
+                                        <hr />
+                                    }
+                                    <p>مبلغ قابل پرداخت: <strong>@order.TotalAmount.ToString("N0")</strong> تومان</p>
+                                }
+                                <p>پس از ثبت سفارش به درگاه پرداخت هدایت می‌شوید.</p>
+                            </section>
+                            <section class="btn">
+                                <button type="submit" class="btn-pay">ثبت سفارش و پرداخت</button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </form>
+        }
+    </section>
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>

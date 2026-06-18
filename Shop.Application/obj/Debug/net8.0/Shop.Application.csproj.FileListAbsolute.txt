@@ -1,0 +1,15 @@
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\bin\Debug\net8.0\Shop.Application.deps.json
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\bin\Debug\net8.0\Shop.Application.dll
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\bin\Debug\net8.0\Shop.Application.pdb
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\bin\Debug\net8.0\Shop.Domain.dll
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\bin\Debug\net8.0\Shop.Domain.pdb
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\obj\Debug\net8.0\Shop.Application.csproj.AssemblyReference.cache
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\obj\Debug\net8.0\Shop.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\obj\Debug\net8.0\Shop.Application.AssemblyInfoInputs.cache
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\obj\Debug\net8.0\Shop.Application.AssemblyInfo.cs
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\obj\Debug\net8.0\Shop.Application.csproj.CoreCompileInputs.cache
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\obj\Debug\net8.0\Shop.App.3200E812.Up2Date
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\obj\Debug\net8.0\Shop.Application.dll
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\obj\Debug\net8.0\refint\Shop.Application.dll
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\obj\Debug\net8.0\Shop.Application.pdb
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Application\obj\Debug\net8.0\ref\Shop.Application.dll

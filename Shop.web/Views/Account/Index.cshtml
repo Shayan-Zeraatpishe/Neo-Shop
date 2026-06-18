@@ -1,0 +1,173 @@
+﻿@model AccountDashboardViewModel
+@using Shop.web.Helpers
+@{
+    Layout = null;
+    ViewData["Title"] = "حساب کاربری";
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/account.css">
+    <title>@(ViewData["Title"])</title>
+</head>
+<body>
+
+
+    <section id="over"></section>
+
+    <button type="button" id="btnmenu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path fill="#181818"
+                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+        </svg>
+    </button>
+
+    <section class="container-fluid">
+
+        <section class="accordion-right" id="accordionright">
+            <ul class="ul-list">
+                <li>
+                    <a asp-controller="Account" asp-action="Index" id="btnorder">
+                        سفارش ها
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z" />
+                        </svg>
+                    </a></li>
+                <li>
+                    <a asp-controller="Profile" asp-action="Index" id="btndetailsaccount">
+                        جزئیات حساب کاربری
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M256.5 72C322.8 72 376.5 125.7 376.5 192C376.5 258.3 322.8 312 256.5 312C190.2 312 136.5 258.3 136.5 192C136.5 125.7 190.2 72 256.5 72zM226.7 368L286.1 368L287.6 368C274.7 394.8 279.8 426.2 299.1 447.5C278.9 469.8 274.3 503.3 289.7 530.9L312.2 571.3C313.1 572.9 314.1 574.5 315.1 576L78.1 576C61.7 576 48.4 562.7 48.4 546.3C48.4 447.8 128.2 368 226.7 368zM432.6 311.6C432.6 298.3 443.3 287.6 456.6 287.6L504.6 287.6C517.9 287.6 528.6 298.3 528.6 311.6L528.6 317.7C528.6 336.6 552.7 350.5 569.1 341.1L574.1 338.2C585.7 331.5 600.6 335.6 607.1 347.3L629.5 387.5C635.7 398.7 632.1 412.7 621.3 419.5L616.6 422.4C600.4 432.5 600.4 462.3 616.6 472.5L621.2 475.4C632 482.2 635.7 496.2 629.5 507.4L607 547.8C600.5 559.5 585.6 563.7 574 556.9L569.1 554C552.7 544.5 528.6 558.5 528.6 577.4L528.6 583.5C528.6 596.8 517.9 607.5 504.6 607.5L456.6 607.5C443.3 607.5 432.6 596.8 432.6 583.5L432.6 577.6C432.6 558.6 408.4 544.6 391.9 554.1L387.1 556.9C375.5 563.6 360.7 559.5 354.1 547.8L331.5 507.4C325.3 496.2 328.9 482.1 339.8 475.3L344.2 472.6C360.5 462.5 360.5 432.5 344.2 422.4L339.7 419.6C328.8 412.8 325.2 398.7 331.4 387.5L353.9 347.2C360.4 335.5 375.3 331.4 386.8 338.1L391.6 340.9C408.1 350.4 432.3 336.4 432.3 317.4L432.3 311.5zM532.5 447.8C532.5 419.1 509.2 395.8 480.5 395.8C451.8 395.8 428.5 419.1 428.5 447.8C428.5 476.5 451.8 499.8 480.5 499.8C509.2 499.8 532.5 476.5 532.5 447.8z" />
+                        </svg>
+                    </a></li>
+                <li>
+                    <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline;">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" style="background:none;border:none;cursor:pointer;font:inherit;color:inherit;padding:0;">
+                            خروج از سیستم
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="container-orders right-sec">
+            <header class="header-account">
+                <h1>سفارش ها</h1>
+            </header>
+
+            <section class="row">
+                <table class="table">
+                    <tr>
+                        <th>کد سفارش</th>
+                        <th>تاریخ</th>
+                        <th>وضعیت</th>
+                        <th>مجموعه</th>
+                        <th class="t-w200">عملیات</th>
+                    </tr>
+                    @if (!Model.Orders.Any())
+                    {
+                        <tr><td colspan="5">سفارشی ثبت نشده است.</td></tr>
+                    }
+                    @foreach (var order in Model.Orders)
+                    {
+                        <tr>
+                            <td>@order.OrderNumber</td>
+                            <td>@order.CreatedAt.ToString("yyyy/MM/dd")</td>
+                            <td><span class="@OrderStatusHelper.GetCssClass(order.Status)">@OrderStatusHelper.GetPersianLabel(order.Status)</span></td>
+                            <td class="p-3">@order.TotalAmount.ToString("N0") تومان (@order.Items.Count مورد)</td>
+                            <td class="d-flex">
+                                <a asp-controller="Account" asp-action="OrderDetails" asp-route-id="@order.Id" class="btn-detail">مشاهده</a>
+                                @if (order.Status is Shop.Domain.Enums.OrderStatus.Paid or Shop.Domain.Enums.OrderStatus.Completed)
+                                {
+                                    <a asp-controller="Checkout" asp-action="Invoice" asp-route-id="@order.Id" class="btn-factor">فاکتور</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </section>
+
+            <!-- Start Pagging -->
+            <section class="pagging">
+                <ul class="list-count">
+                    <li class="active"><a href="#">1</a></li>
+ 
+                </ul>
+            </section>
+            <!-- End Pagging -->
+
+        </section>
+
+@*         <section class="container-edit-account right-sec">
+            <header class="header-account">
+                <h1>جزئیات حساب کاربری</h1>
+            </header>
+
+            <section class="container-inp">
+                <div class="inp-group">
+                    <div class="sec-inp">
+                        <label for="fullname">نام و نام خانوادگی</label>
+                        <input type="text" class="inp" id="fullname" value="@Model.FullName" readonly>
+                        <span class="text-danger">وارد کردن نام و نام خانوادگی اجباری است</span>
+                    </div>
+                    <div class="sec-inp">
+                        <label for="phone">شماره تلفن</label>
+                        <input type="text" class="inp" id="phone" value="@Model.PhoneNumber" readonly>
+                        <span class="text-danger">وارد کردن شماره تلفن اجباری است</span>
+                    </div>
+                </div>
+
+                <div class="inp-group">
+                    <div class="sec-inp">
+                        <label for="email">ایمیل</label>
+                        <input type="text" class="inp" id="email" value="@Model.Email" readonly>
+                        <span class="text-danger">وارد کردن ایمیل اجباری است</span>
+                    </div>
+                    <div class="sec-inp">
+                        <label for="address">آدرس</label>
+                        <input type="text" class="inp" id="address">
+                        <span class="text-danger">وارد کردن آدرس اجباری است</span>
+                    </div>
+                </div>
+
+                <div class="sec-inp">
+                    <label for="oldpassword">گذرواژه</label>
+                    <input type="text" class="inp" id="oldpassword">
+                    <span class="text-danger">وارد کردن گذرواژه اجباری است</span>
+                </div>
+                <div class="inp-group">
+                    <div class="sec-inp">
+                        <label for="newpassword">گذرواژه جدید</label>
+                        <input type="text" class="inp" id="newpassword">
+                        <span class="text-danger">وارد کردن گذرواژه اجباری است</span>
+                    </div>
+                    <div class="sec-inp">
+                        <label for="renewpassword">تکرار گذرواژه</label>
+                        <input type="text" class="inp" id="renewpassword">
+                        <span class="text-danger">وارد کردن گذرواژه اجباری است</span>
+                    </div>
+                </div>
+
+                <div class="sec-inp">
+                    <a asp-controller="Profile" asp-action="Index" class="submit" style="display:inline-block;text-align:center;text-decoration:none;">ویرایش حساب کاربری</a>
+                </div>
+
+            </section>
+        </section> *@
+
+
+    </section>
+
+    <script src="~/js/account.js"></script>
+
+
+</body>
+</html>
+
+

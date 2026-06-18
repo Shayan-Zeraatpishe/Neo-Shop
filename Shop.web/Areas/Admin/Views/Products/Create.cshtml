@@ -1,0 +1,143 @@
+﻿@model Shop.web.Areas.Admin.ViewModels.Products.AdminProductCreateEditViewModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "افزودن محصول";
+}
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/admin/css/admin.css">
+    <link rel="stylesheet" href="~/admin/css/addproduct.css">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+        <partial name="_listnav" />
+
+        <section class="container-body">
+            <header class="header-sec">
+                <h1>افزودن محصول</h1>
+                <div class="form-grid">
+                    <form asp-action="Create" asp-controller="Products" asp-area="Admin" method="post" enctype="multipart/form-data">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="All" style="color:red;"></div>
+
+                        <div class="form-group">
+                            <label asp-for="Name">نام محصول</label>
+                            <input asp-for="Name" class="input" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="ShortDescription">توضیح کوتاه </label>
+                            <input asp-for="ShortDescription" class="input" />
+                            <span asp-validation-for="ShortDescription" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Description">توضیحات محصول</label>
+                            <textarea asp-for="Description" class="input" rows="6"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Price">قیمت</label>
+                            <input asp-for="Price" class="input" type="number" step="0.01" />
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="DiscountPrice">قیمت پس از تخفیف</label>
+                            <input asp-for="DiscountPrice" class="input" type="number" step="0.01" />
+                            <span asp-validation-for="DiscountPrice" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Brand">برند محصول</label>
+                            <input asp-for="Brand" class="input" />
+                            <span asp-validation-for="Brand" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="CategoryId">دسته بندی محصول</label>
+                            <select asp-for="CategoryId" asp-items="ViewBag.Categories as Microsoft.AspNetCore.Mvc.Rendering.SelectList" class="select-order">
+                                <option value="">انتخاب دسته...</option>
+                            </select>
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Stock">تعداد</label>
+                            <input asp-for="Stock" class="input" type="number" />
+                            <span asp-validation-for="Stock" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>وضعیت انتشار</label>
+                            <div>
+                                <label><input asp-for="IsActive" type="checkbox" /> فعال</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label><input asp-for="IsFeatured" type="checkbox" /> ویژه</label>
+                            <label><input asp-for="IsSpecialOffer" type="checkbox" /> پیشنهاد ویژه</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Specifications">مشخصات محصول</label>
+                            <textarea asp-for="Specifications" class="input" rows="3"></textarea>
+                        </div>
+
+                        <hr />
+                        <h3>SEO</h3>
+
+                        <div class="form-group">
+                            <label asp-for="SeoTitle">اسم مناسب سئو</label>
+                            <input asp-for="SeoTitle" class="input" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SeoDescription">توضیح مناسب سئو</label>
+                            <textarea asp-for="SeoDescription" class="input" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SeoKeywords">کلمات سرچ</label>
+                            <input asp-for="SeoKeywords" class="input" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SeoCanonicalUrl">ادرس صفحه</label>
+                            <input asp-for="SeoCanonicalUrl" class="input" />
+                        </div>
+
+                        <hr />
+                        <h3>تصاویر و فایل دیجیتال</h3>
+
+                        <div class="form-group">
+                            <label>تصویر اصلی</label>
+                            <input type="file" name="MainImageFile" accept="image/*" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>گالری تصاویر (چندتایی)</label>
+                            <input type="file" name="GalleryImageFiles" accept="image/*" multiple />
+                        </div>
+
+
+                        <button type="submit" class="btn btn-red">ذخیره</button>
+                        <a asp-action="Index" asp-controller="Products" asp-area="Admin" class="btn btn-info">بازگشت</a>
+                    </form>
+                </div>
+            </header>
+        </section>
+    </section>
+
+    <script src="~/admin/js/menu-admin.js"></script>
+</body>
+</html>
+

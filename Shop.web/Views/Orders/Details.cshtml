@@ -1,0 +1,51 @@
+@model Shop.Domain.Entities.Order
+@using Shop.web.Helpers
+@{
+    Layout = null;
+    ViewData["Title"] = "جزئیات سفارش";
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/detailorder.css">
+    <title>جزئیات سفارش @Model.OrderNumber</title>
+</head>
+<body>
+    <section class="container-detail" style="max-width:800px;margin:2rem auto;">
+        <header><h1>جزئیات سفارش @Model.OrderNumber</h1></header>
+        <p>وضعیت: <span class="@OrderStatusHelper.GetCssClass(Model.Status)">@OrderStatusHelper.GetPersianLabel(Model.Status)</span></p>
+        <p>تاریخ: @Model.CreatedAt.ToString("yyyy/MM/dd HH:mm")</p>
+
+        <table style="width:100%;margin-top:1rem;">
+            <tr><th>محصول</th><th>تعداد</th><th>قیمت واحد</th><th>مجموع</th></tr>
+            @foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.UnitPrice.ToString("N0")</td>
+                    <td>@item.TotalPrice.ToString("N0") تومان</td>
+                </tr>
+            }
+            <tr>
+                <td colspan="3"><strong>جمع کل</strong></td>
+                <td><strong>@Model.TotalAmount.ToString("N0") تومان</strong></td>
+            </tr>
+        </table>
+
+        @foreach (var item in Model.Items.Where(i => i.DownloadToken != null))
+        {
+            <p style="margin-top:1rem;">
+                دانلود @item.ProductName:
+                <a asp-controller="Download" asp-action="File" asp-route-token="@item.DownloadToken!.Token">دریافت فایل</a>
+            </p>
+        }
+
+        <p style="margin-top:2rem;">
+            <a asp-action="Index">بازگشت به لیست سفارش‌ها</a>
+        </p>
+    </section>
+</body>
+</html>

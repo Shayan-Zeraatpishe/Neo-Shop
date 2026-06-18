@@ -1,0 +1,36 @@
+@model Shop.Domain.Entities.Order
+@{
+    Layout = null;
+    ViewData["Title"] = "درگاه پرداخت";
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/account-settlement.css">
+    <title>درگاه پرداخت</title>
+    <style>
+        .payment-box { max-width: 480px; margin: 3rem auto; padding: 2rem; background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,.08); text-align: center; }
+        .payment-box h1 { font-size: 1.25rem; margin-bottom: 1rem; }
+        .payment-amount { font-size: 1.5rem; color: #e74c3c; margin: 1rem 0; }
+        .btn-pay-gateway { background: #27ae60; color: #fff; border: none; padding: .75rem 2rem; border-radius: 8px; font-size: 1rem; cursor: pointer; }
+        .btn-cancel { display: inline-block; margin-top: 1rem; color: #666; }
+    </style>
+</head>
+<body>
+    <section class="payment-box">
+        <h1>پرداخت سفارش @Model.OrderNumber</h1>
+        <p>مبلغ قابل پرداخت:</p>
+        <div class="payment-amount">@Model.TotalAmount.ToString("N0") تومان</div>
+        <p style="color:#888;font-size:.9rem;">درگاه پرداخت زرین‌پال (حالت آزمایشی)</p>
+        <form asp-action="Gateway" method="post">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="authority" value="@ViewBag.Authority" />
+            <input type="hidden" name="orderId" value="@ViewBag.OrderId" />
+            <button type="submit" class="btn-pay-gateway">پرداخت و تایید</button>
+        </form>
+        <a asp-controller="Orders" asp-action="Index" class="btn-cancel">انصراف</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿@model Shop.Domain.Entities.Product
+@{
+    var hasDiscount = Model.DiscountPrice.HasValue && Model.DiscountPrice < Model.Price;
+}
+<section class="card">
+    @if (Model.IsSpecialOffer || hasDiscount)
+    {
+        <section class="card-special">فروش ویژه
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path fill="#ffffff"
+                    d="M433.2 103.1L581.4 253.4C609.1 281.5 609.1 326.5 581.4 354.6L425 512.9C415.7 522.3 400.5 522.4 391.1 513.1C381.7 503.8 381.6 488.6 390.9 479.2L547.3 320.8C556.5 311.5 556.5 296.4 547.3 287.1L399 136.9C389.7 127.5 389.8 112.3 399.2 103C408.6 93.7 423.8 93.8 433.1 103.2zM64.1 293.5L64.1 160C64.1 124.7 92.8 96 128.1 96L261.6 96C278.6 96 294.9 102.7 306.9 114.7L450.9 258.7C475.9 283.7 475.9 324.2 450.9 349.2L317.4 482.7C292.4 507.7 251.9 507.7 226.9 482.7L82.9 338.7C70.9 326.7 64.2 310.4 64.2 293.4zM208.1 208C208.1 190.3 193.8 176 176.1 176C158.4 176 144.1 190.3 144.1 208C144.1 225.7 158.4 240 176.1 240C193.8 240 208.1 225.7 208.1 208z" />
+            </svg>
+        </section>
+    }
+    <section class="card-thumnail">
+        <a asp-controller="Products" asp-action="Details" asp-route-id="@Model.Slug">
+            <img src="@(Model.MainImageUrl ?? "/images/products/mo.png")" alt="@Model.Name">
+        </a>
+    </section>
+    <section class="card-body">
+        <div class="card-title">
+            <a asp-controller="Products" asp-action="Details" asp-route-id="@Model.Slug">
+                <h2>@Model.Name</h2>
+            </a>
+        </div>
+        <div class="card-buttons">
+            <div class="btns">
+                <a asp-controller="Products" asp-action="Details" asp-route-id="@Model.Slug" class="btn-pay">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path d="M0 72C0 58.7 10.7 48 24 48L69.3 48C96.4 48 119.6 67.4 124.4 94L124.8 96L537.5 96C557.5 96 572.6 114.2 568.9 133.9L537.8 299.8C532.1 330.1 505.7 352 474.9 352L171.3 352L176.4 380.3C178.5 391.7 188.4 400 200 400L456 400C469.3 400 480 410.7 480 424C480 437.3 469.3 448 456 448L200.1 448C165.3 448 135.5 423.1 129.3 388.9L77.2 102.6C76.5 98.8 73.2 96 69.3 96L24 96C10.7 96 0 85.3 0 72z" />
+                    </svg>
+                </a>
+                <form asp-controller="Orders" asp-action="BuyNow" asp-route-productId="@Model.Id" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn-cart" style="background:none;border:none;cursor:pointer;padding:0;" title="Buy Now" aria-label="Buy Now">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM288 224C288 206.3 302.3 192 320 192C337.7 192 352 206.3 352 224C352 241.7 337.7 256 320 256C302.3 256 288 241.7 288 224zM280 288L328 288C341.3 288 352 298.7 352 312L352 400L360 400C373.3 400 384 410.7 384 424C384 437.3 373.3 448 360 448L280 448C266.7 448 256 437.3 256 424C256 410.7 266.7 400 280 400L304 400L304 336L280 336C266.7 336 256 325.3 256 312C256 298.7 266.7 288 280 288z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="amount-box">
+                @if (hasDiscount)
+                {
+                    <span class="discount-lable">@Model.Price.ToString("N0")</span>
+                    <span class="lable">@Model.DiscountPrice!.Value.ToString("N0")</span>
+                }
+                else
+                {
+                    <span class="lable">@Model.Price.ToString("N0")</span>
+                }
+                <span>تومن</span>
+            </div>
+        </div>
+    </section>
+</section>
+
+

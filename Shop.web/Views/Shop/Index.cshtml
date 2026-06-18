@@ -1,0 +1,190 @@
+﻿@model ShopIndexViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/shop.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>@(ViewData["Title"])</title>
+</head>
+<body>
+
+
+    <partial name="_partialheader" />
+
+
+    <section id="over"></section>
+
+    <section class="container">
+
+        <!-- Start Link Pages -->
+        <div class="breadcrumb-Container">
+            <nav class="breadcrumb">
+                <a asp-controller="Home" asp-action="Index">خانه</a> ›
+                <a asp-controller="Shop" asp-action="Index">فروشگاه</a>
+                @if (Model.CurrentCategory != null)
+                {
+                    <span> › @Model.CurrentCategory.Name</span>
+                }
+            </nav>
+        </div>
+
+        <form asp-action="Index" method="get" style="margin:1rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;">
+            <input type="text" name="q"  value="@Model.SearchTerm" placeholder="جستجوی محصول..." style="padding:.5rem;min-width:200px;">
+            <input type="number" name="minPrice" value="@Model.MinPrice" placeholder="حداقل قیمت" style="padding:.5rem;width:120px;">
+            <input type="number" name="maxPrice" value="@Model.MaxPrice" placeholder="حداکثر قیمت" style="padding:.5rem;width:120px;">
+            @if (Model.CurrentCategory != null)
+            {
+                <input type="hidden" name="category" value="@Model.CurrentCategory.Slug" />
+            }
+            <button type="submit" class="inpsubsearch" style="padding:.5rem 1rem;background:#e74c3c;color:#fff;border:none;border-radius:4px;cursor:pointer;">جستجو</button>
+            <a asp-action="Index"  style="padding:.5rem; color:#222;">پاک کردن فیلتر</a>
+        </form>
+        <!-- End Link Pages -->
+
+
+        <section class="container-fluid">
+
+            <section class="sec-right" id="secright">
+                <header class="header-filter">
+                    <h2>فیلتر محصول</h2>
+                    <button class="btn-close-filter" id="btnclosefilter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" />
+                        </svg>
+                    </button>
+                </header>
+                <section class="c-filter">
+
+@*                     <section class="sec-amount">
+                        <h4>فیلتر براساس قیمت :</h4>
+                        <hr>
+
+                        <div class="slider-container">
+                            <input type="range" id="minRange" min="0" max="66800000" value="0">
+                            <input type="range" id="maxRange" min="0" max="66800000" value="66800000">
+                        </div>
+
+                        <div class="price-values">
+                            <span id="minPrice">۰ تومان</span>
+                            <span id="maxPrice">۶۶,۸۰۰,۰۰۰ تومان</span>
+                        </div>
+
+                        <button class="btn">صافــی</button>
+                    </section> *@
+
+@*                     <section class="sec-fiter">
+                        <header>
+                            فیلتر براساس رنگ :
+                        </header>
+                        <hr>
+                        <select name="" id="">
+                            <option value="red">قرمز</option>
+                            <option value="red">آبی</option>
+                            <option value="red">بنفش</option>
+                            <option value="red">مشکی</option>
+                        </select>
+                    </section> *@
+
+                    <section class="sec-fiter">
+                        <header>فیلتر بر اساس دسته‌بندی :</header>
+                        <hr>
+                        <ul style="list-style:none;padding:0;">
+                            <li><a asp-action="Index" asp-route-q="@Model.SearchTerm">همه محصولات</a></li>
+                            @foreach (var cat in Model.Categories)
+                            {
+                                <li><a asp-action="Index" asp-route-category="@cat.Slug" asp-route-q="@Model.SearchTerm">@cat.Name</a></li>
+                                @foreach (var sub in cat.SubCategories)
+                                {
+                                    <li style="padding-right:1rem;"><a asp-action="Index" asp-route-category="@sub.Slug" asp-route-q="@Model.SearchTerm">@sub.Name</a></li>
+                                }
+                            }
+                        </ul>
+                    </section>
+
+                </section>
+
+
+            </section>
+
+            <section class="sec-left">
+                <section class="before-shop">
+
+
+                    <!-- filter-shop mobile -->
+                    <section class="filter-shop" id="btnfiltershop">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 128C83.1 128 71.4 135.8 66.4 147.8C61.4 159.8 64.2 173.5 73.4 182.6L256 365.3L256 480C256 488.5 259.4 496.6 265.4 502.6L329.4 566.6C338.6 575.8 352.3 578.5 364.3 573.5C376.3 568.5 384 556.9 384 544L384 365.3L566.6 182.7C575.8 173.5 578.5 159.8 573.5 147.8C568.5 135.8 556.9 128 544 128L96 128z"/></svg>
+                        <span>فیلتر کردن</span>
+                    </section>
+                    <!-- filter-shop mobile -->
+
+                    <!-- Responsive for mobile -->
+                    <section class="order-mobile">
+                        <p>مرتبط سازی بر اساس</p>
+                        <select name="orderby" id="">
+                            <option value="">پیشفرض</option>
+                            <option value="">جدیدترین</option>
+                            <option value="">هزینه کم به زیاد</option>
+                            <option value="">هزینه زیاد به کم</option>
+                        </select>
+                    </section>
+                    <!-- Responsive for mobile -->
+
+                    <div class="order-by">
+                        <p>مرتبط سازی بر اساس</p>
+                        <a href="#">پیشفرض</a>
+                        <a href="#">جدیدترین</a>
+                        <a href="#">هزینه کم به زیاد</a>
+                        <a href="#">هزینه زیاد به کم</a>
+                    </div>
+
+                </section>
+
+                <header class="shop-header">
+                    <h1>@(Model.CurrentCategory?.Name ?? (string.IsNullOrWhiteSpace(Model.SearchTerm) ? "همه محصولات" : $"نتایج جستجو برای \"{Model.SearchTerm}\"")) (@Model.Products.Count)
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill="#ffffff"
+                                d="M433.2 103.1L581.4 253.4C609.1 281.5 609.1 326.5 581.4 354.6L425 512.9C415.7 522.3 400.5 522.4 391.1 513.1C381.7 503.8 381.6 488.6 390.9 479.2L547.3 320.8C556.5 311.5 556.5 296.4 547.3 287.1L399 136.9C389.7 127.5 389.8 112.3 399.2 103C408.6 93.7 423.8 93.8 433.1 103.2zM64.1 293.5L64.1 160C64.1 124.7 92.8 96 128.1 96L261.6 96C278.6 96 294.9 102.7 306.9 114.7L450.9 258.7C475.9 283.7 475.9 324.2 450.9 349.2L317.4 482.7C292.4 507.7 251.9 507.7 226.9 482.7L82.9 338.7C70.9 326.7 64.2 310.4 64.2 293.4zM208.1 208C208.1 190.3 193.8 176 176.1 176C158.4 176 144.1 190.3 144.1 208C144.1 225.7 158.4 240 176.1 240C193.8 240 208.1 225.7 208.1 208z" />
+                        </svg>
+                    </h1>
+                </header>
+
+
+                <section class="container-card">
+                    @if (!Model.Products.Any())
+                    {
+                        @if (!string.IsNullOrWhiteSpace(Model.SearchTerm))
+                        {
+                            <p>محصولی با عبارت «@Model.SearchTerm» یافت نشد.</p>
+                        }
+                        else
+                        {
+                            <p>محصولی یافت نشد.</p>
+                        }
+                    }
+                    @foreach (var product in Model.Products)
+                    {
+                        @await Html.PartialAsync("_ProductCard", product)
+                    }
+                </section>
+
+            </section>
+        </section>
+    </section>
+
+
+    <partial name="_partialfooter" />
+
+    <script src="~/js/progress-amount.js"></script>
+    <script src="~/js/shop.js"></script>
+
+
+</body>
+</html>
+
+

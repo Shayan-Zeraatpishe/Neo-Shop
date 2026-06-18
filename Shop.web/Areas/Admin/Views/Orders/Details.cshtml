@@ -1,0 +1,201 @@
+@model Shop.web.Areas.Admin.ViewModels.Orders.AdminOrderDetailsViewModel
+@using Shop.web.Helpers
+@using Shop.Domain.Enums
+
+@{
+    Layout = null;
+    ViewData["Title"] = "جزئیات سفارش";
+}
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/admin/css/admin.css">
+    <link rel="stylesheet" href="~/admin/css/detailorder.css">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+        <partial name="_listnav" />
+
+        <section class="container-body">
+            <h1 class="header-sec">
+                جزئیات سفارش @Model.OrderNumber
+            </h1>
+
+            @if (TempData["Error"] != null)
+            {
+                <div style="background:#f8d7da;padding:.75rem;border-radius:6px;margin:1rem 0;">
+                    @TempData["Error"]
+                </div>
+            }
+
+            <div class="container-details">
+
+                <section style="margin-top:1rem;">
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+                        <div>
+                            <p>
+                                وضعیت سفارش:
+                                <span class="@OrderStatusHelper.GetCssClass(Model.Status)">
+                                    @OrderStatusHelper.GetPersianLabel(Model.Status)
+                                </span>
+                            </p>
+                            <p>تاریخ: @Model.CreatedAtUtc.ToString("yyyy/MM/dd HH:mm")</p>
+                            <p>
+                                پرداخت:
+                                <strong>
+                                    @(Model.PaymentStatus == PaymentStatus.Paid ? "پرداخت شده" : "پرداخت نشده")
+                                </strong>
+                            </p>
+                            @if (Model.PaidAtUtc != null)
+                            {
+                                <p>زمان پرداخت: @Model.PaidAtUtc.Value.ToString("yyyy/MM/dd HH:mm")</p>
+                            }
+                            @if (!string.IsNullOrWhiteSpace(Model.PaymentProvider))
+                            {
+                                <p>درگاه: @Model.PaymentProvider</p>
+                            }
+                            @if (!string.IsNullOrWhiteSpace(Model.PaymentReferenceId))
+                            {
+                                <p>شماره پیگیری: @Model.PaymentReferenceId</p>
+                            }
+                        </div>
+                    </div>
+                </section>
+
+                <section style="margin-top:1.5rem;">
+                    <h3>اطلاعات مشتری</h3>
+                    <p><strong>نام:</strong> @Model.FullName</p>
+                    <p><strong>ایمیل:</strong> @Model.Email</p>
+                    <p><strong>موبایل:</strong> @Model.PhoneNumber</p>
+                </section>
+
+                <section style="margin-top:1.5rem;">
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+                        <div style="flex:1;min-width:260px;">
+                            <h3>آدرس تحویل (Shipping)</h3>
+                            <p style="white-space:pre-wrap;">@(Model.ShippingAddress ?? "-")</p>
+                        </div>
+                        <div style="flex:1;min-width:260px;">
+                            <h3>آدرس صورتحساب (Billing)</h3>
+                            <p style="white-space:pre-wrap;">@(Model.BillingAddress ?? "-")</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section style="margin-top:1.5rem;">
+                    <h3>محصولات سفارش</h3>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>محصول</th>
+                                <th>تعداد</th>
+                                <th>قیمت واحد</th>
+                                <th>مجموع</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Items)
+                            {
+                                <tr>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.UnitPrice.ToString("N0") تومان</td>
+                                    <td>@item.TotalPrice.ToString("N0") تومان</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    <div style="margin-top:1rem;">
+                        <p><strong>جمع جزء:</strong> @Model.SubTotal.ToString("N0") تومان</p>
+                        <p><strong>تخفیف:</strong> @Model.DiscountAmount.ToString("N0") تومان</p>
+                        <p><strong>جمع کل:</strong> @Model.TotalAmount.ToString("N0") تومان</p>
+                    </div>
+
+                    @if (!string.IsNullOrWhiteSpace(Model.Notes))
+                    {
+                        <div style="margin-top:1rem;">
+                            <h3>یادداشت</h3>
+                            <p style="white-space:pre-wrap;">@Model.Notes</p>
+                        </div>
+                    }
+                </section>
+
+                <section style="margin-top:1.5rem;">
+                    <h3>تاریخچه وضعیت سفارش</h3>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>تغییر از</th>
+                                <th>تغییر به</th>
+                                <th>زمان</th>
+                                <th>کاربر</th>
+                                <th>توضیح</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.StatusHistory.Count == 0)
+                            {
+                                <tr>
+                                    <td colspan="5">تاریخچه ثبت نشده است.</td>
+                                </tr>
+                            }
+                            else
+                            {
+                                @foreach (var h in Model.StatusHistory)
+                                {
+                                    <tr>
+                                        <td>@OrderStatusHelper.GetPersianLabel(h.OldStatus)</td>
+                                        <td>@OrderStatusHelper.GetPersianLabel(h.NewStatus)</td>
+                                        <td>@h.ChangedAtUtc.ToString("yyyy/MM/dd HH:mm")</td>
+                                        <td>@(string.IsNullOrWhiteSpace(h.ChangedByUserId) ? "-" : h.ChangedByUserId)</td>
+                                        <td>@(string.IsNullOrWhiteSpace(h.Note) ? "-" : h.Note)</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </section>
+
+                <section style="margin-top:1.5rem;">
+                    <h3>به‌روزرسانی وضعیت</h3>
+                    <form asp-action="UpdateStatus" asp-controller="Orders" asp-area="Admin" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="orderId" value="@Model.Id" />
+
+                        <div class="form-group">
+                            <label>وضعیت جدید</label>
+                            <select name="status" class="select-order">
+                                @foreach (var st in Enum.GetValues<OrderStatus>())
+                                {
+                                    <option value="@( (int)st )" selected="@(Model.Status == st)">
+                                        @OrderStatusHelper.GetPersianLabel(st)
+                                    </option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>توضیح (اختیاری)</label>
+                            <input type="text" name="note" class="input" maxlength="500" />
+                        </div>
+
+                        <button type="submit" class="btn btn-success">ذخیره</button>
+                        <a asp-action="Index" asp-controller="Orders" asp-area="Admin" class="btn btn-info">بازگشت</a>
+                    </form>
+                </section>
+
+            </div>
+        </section>
+    </section>
+
+    <script src="~/admin/js/menu-admin.js"></script>
+</body>
+</html>
+

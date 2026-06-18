@@ -1,0 +1,100 @@
+@model Shop.web.Areas.Admin.ViewModels.Comments.AdminCommentDetailsViewModel
+@using Shop.web.Helpers
+@{
+    Layout = null;
+    ViewData["Title"] = "جزئیات دیدگاه";
+}
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/admin/css/listcomment.css" rel="stylesheet" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+        <partial name="_listnav" />
+
+        <section class="container-body">
+            <header class="header-sec">
+                <h1>جزئیات دیدگاه #@Model.Id</h1>
+            </header>
+
+            @if (TempData["Success"] != null)
+            {
+                <p style="color:green;">@TempData["Success"]</p>
+            }
+
+            <section class="sec-comment">
+                <section class="sec-top">
+                    <p><strong>محصول:</strong> @Model.ProductName</p>
+                    <p><strong>نویسنده:</strong> @Model.AuthorName</p>
+                    <p><strong>ایمیل:</strong> @(Model.AuthorEmail ?? "-")</p>
+                    @if (!string.IsNullOrWhiteSpace(Model.UserFullName))
+                    {
+                        <p><strong>کاربر ثبت‌نام‌شده:</strong> @Model.UserFullName (@Model.UserPhone)</p>
+                    }
+                    <p><strong>وضعیت:</strong> @CommentStatusHelper.GetPersianLabel(Model.Status)</p>
+                    <p><strong>تاریخ ثبت:</strong> @Model.CreatedAtUtc.ToLocalTime().ToString("yyyy/MM/dd HH:mm")</p>
+                    <p class="dec-comment">@Model.Content</p>
+                    @if (!string.IsNullOrWhiteSpace(Model.AdminReply))
+                    {
+                        <p><strong>پاسخ فعلی:</strong> @Model.AdminReply</p>
+                    }
+                </section>
+
+                <section class="sec-bottom" style="margin-top:1rem;">
+                    @if (Model.Status != Shop.Domain.Enums.CommentStatus.Approved)
+                    {
+                        <form asp-action="Approve" method="post" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@Model.Id" />
+                            <button type="submit" class="btn-success" style="border:none;cursor:pointer;">تأیید</button>
+                        </form>
+                    }
+                    @if (Model.Status != Shop.Domain.Enums.CommentStatus.Rejected)
+                    {
+                        <form asp-action="Reject" method="post" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@Model.Id" />
+                            <button type="submit" class="btn-danger" style="border:none;cursor:pointer;">رد</button>
+                        </form>
+                    }
+                    <form asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('آیا از حذف این دیدگاه مطمئن هستید؟');">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@Model.Id" />
+                        <button type="submit" class="btn-danger" style="border:none;cursor:pointer;">حذف</button>
+                    </form>
+                    <a asp-action="Index" class="btn-info">بازگشت به لیست</a>
+                    <a asp-controller="Products" asp-action="Details" asp-route-id="@Model.ProductSlug" target="_blank" class="btn-info">مشاهده محصول</a>
+                </section>
+
+                <section class="replace-comment" style="margin-top:1.5rem;">
+                    <form asp-action="Reply" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="ProductId" />
+                        <input type="hidden" asp-for="ProductName" />
+                        <input type="hidden" asp-for="ProductSlug" />
+                        <input type="hidden" asp-for="AuthorName" />
+                        <input type="hidden" asp-for="Content" />
+                        <input type="hidden" asp-for="Status" />
+                        <textarea class="rep" asp-for="ReplyText" rows="4" placeholder="پاسخ ادمین"></textarea>
+                        <span asp-validation-for="ReplyText" style="color:red;"></span>
+                        <section class="btns" style="margin-top:.5rem;">
+                            <button class="btn-info btn" type="submit">ثبت پاسخ</button>
+                        </section>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>

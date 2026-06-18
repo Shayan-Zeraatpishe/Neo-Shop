@@ -1,0 +1,129 @@
+@model IReadOnlyList<Shop.Domain.Entities.Article>
+@{
+    Layout = null;
+    ViewData["Title"] = "لیست مقالات";
+}
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/admin/css/admin.css">
+    <link href="~/admin/css/listarticle.css" rel="stylesheet" />
+    <title>@(ViewData["Title"] ?? "پنل ادمین")</title>
+</head>
+<body>
+
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+
+        <partial name="_listnav" />
+
+        <!-- Start Container Body Panel -->
+        <section class="container-body">
+            <header class="header-sec">
+                <h1>لیست مقالات</h1>
+                <p><a asp-action="Create" class="btn btn-success">افزودن مقاله</a></p>
+
+                <div class="grid-table">
+
+                    
+                    <table class="admin-table">
+
+                        <thead>
+                            <tr>
+                                <th>عنوان مقاله</th>
+                                <th>وضعیت</th>
+                                <th>تاریخ انتشار</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            @if (!Model.Any())
+                            {
+                                <tr>
+                                    <td colspan="4" class="empty-row">
+                                        هیچ مقاله‌ای یافت نشد
+                                    </td>
+                                </tr>
+                            }
+                            else
+                            {
+                                @foreach (var article in Model)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            <div class="article-title">
+                                                @article.Title
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <span class="badge @(article.IsPublished ? "badge-success" : "badge-warning")">
+                                                @(article.IsPublished ? "منتشر شده" : "پیش نویس")
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            @(article.PublishedAt?.ToString("yyyy/MM/dd") ?? "-")
+                                        </td>
+
+                                        <td>
+
+                                            <div class="table-actions">
+
+                                                <a asp-action="Edit"
+                                                   asp-route-id="@article.Id"
+                                                   class="btn btn-primary">
+                                                    ویرایش
+                                                </a>
+
+                                                <form asp-action="Delete"
+                                                      asp-route-id="@article.Id"
+                                                      method="post"
+                                                      style="display:inline;"
+                                                      onsubmit="return confirm('حذف شود؟');">
+
+                                                    @Html.AntiForgeryToken()
+
+                                                    <button type="submit"
+                                                            class="btn btn-danger">
+                                                        حذف
+                                                    </button>
+
+                                                </form>
+
+                                            </div>
+
+                                        </td>
+
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+
+                    </table>
+                    
+
+                </div>
+
+            </header>
+
+        </section>
+        <!-- End Container Body Panel -->
+
+    </section>
+
+    <script src="~/admin/js/menu-admin.js"></script>
+
+
+</body>
+</html>
+
+

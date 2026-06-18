@@ -1,0 +1,74 @@
+@model Shop.Domain.Entities.Article
+@{
+    Layout = null;
+    ViewData["Title"] = "افزودن مقاله";
+}
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/admin/css/admin.css">
+    <link href="~/admin/css/addarticle.css" rel="stylesheet" />
+    <title>@(ViewData["Title"] ?? "پنل ادمین")</title>
+</head>
+<body>
+
+    <partial name="_Headertopadmin" />
+
+    <section class="container-fluid">
+
+        <partial name="_listnav" />
+
+        <!-- Start Container Body Panel -->
+        <section class="container-body">
+            <header class="header-sec">
+                <h1>افزودن مقاله</h1>
+
+
+                <div class="create-article-t"></div>
+                <form asp-action="Create" method="post" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="All" style="color:red;"></div>
+
+                    <div class="form-group">
+                        <label asp-for="Title">موضوع مقاله</label>
+                        <input asp-for="Title" />
+                        <span asp-validation-for="Title"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Summary">خلاصه مقاله</label>
+                        <textarea asp-for="Summary" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Content">متن مقاله</label>
+                        <textarea asp-for="Content" rows="8"></textarea>
+                        <span asp-validation-for="Content"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>تصویر</label>
+                        <input type="file" name="imageFile" accept="image/*" />
+                    </div>
+                    <div class="form-group">
+                        <label><input asp-for="IsPublished" type="checkbox" /> منتشر شود</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">ذخیره</button>
+                    <a asp-action="Index">انصراف</a>
+                </form>
+                </div>
+            </header>
+
+        </section>
+        <!-- End Container Body Panel -->
+
+    </section>
+
+    <script src="~/admin/js/menu-admin.js"></script>
+
+
+</body>
+</html>
+
+
