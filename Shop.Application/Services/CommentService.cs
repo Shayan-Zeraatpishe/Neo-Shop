@@ -7,14 +7,18 @@ using Shop.Domain.Enums;
 namespace Shop.Application.Services;
 
 public class CommentService : ICommentService
+
 {
     private readonly ICommentRepository _commentRepository;
     private readonly IProductRepository _productRepository;
+    private readonly ICommentModerationService _commentModerationService;
 
-    public CommentService(ICommentRepository commentRepository, IProductRepository productRepository)
+    public CommentService(ICommentRepository commentRepository, IProductRepository productRepository, ICommentModerationService commentModerationService)
     {
         _commentRepository = commentRepository;
         _productRepository = productRepository;
+        _commentModerationService = commentModerationService;
+
     }
 
     public Task<IReadOnlyList<ProductCommentDto>> GetApprovedProductCommentsAsync(int productId, CancellationToken cancellationToken = default)
@@ -39,6 +43,14 @@ public class CommentService : ICommentService
         if (product == null || !product.IsActive)
             return (false, "محصول یافت نشد.");
 
+        var moderationResult =
+    await _commentModerationService
+        .AnalyzeCommentAsync(content);
+
+
+    //    throw new Exception(
+    //$"Approved={moderationResult.IsApproved} | Reason={moderationResult.Reason}");
+
         var comment = new Comment
         {
             ProductId = dto.ProductId,
@@ -46,7 +58,9 @@ public class CommentService : ICommentService
             AuthorName = authorName,
             AuthorEmail = email,
             Content = content,
-            Status = CommentStatus.Pending
+            Status = moderationResult.IsApproved
+                  ? CommentStatus.Approved
+                  : CommentStatus.Pending
         };
 
         await _commentRepository.AddAsync(comment, cancellationToken);

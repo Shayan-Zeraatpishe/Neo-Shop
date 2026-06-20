@@ -5,6 +5,7 @@ C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domai
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.AssemblyInfoInputs.cache
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.AssemblyInfo.cs
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.sourcelink.json
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.dll
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\refint\Shop.Domain.dll
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Domain\obj\Debug\net8.0\Shop.Domain.pdb

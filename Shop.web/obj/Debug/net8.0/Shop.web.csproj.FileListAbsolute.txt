@@ -136,6 +136,7 @@ C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.web\obj\Debug\net8.0\Shop.web.cspr
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.web\obj\Debug\net8.0\Shop.web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.web\obj\Debug\net8.0\Shop.web.RazorAssemblyInfo.cache
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.web\obj\Debug\net8.0\Shop.web.RazorAssemblyInfo.cs
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.web\obj\Debug\net8.0\Shop.web.sourcelink.json
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.web\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.web\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.web\obj\Debug\net8.0\staticwebassets\msbuild.Shop.web.Microsoft.AspNetCore.StaticWebAssets.props

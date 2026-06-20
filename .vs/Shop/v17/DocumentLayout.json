@@ -3,28 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\views\\articles\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\views\\articles\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\areas\\admin\\views\\articles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\areas\\admin\\views\\articles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\areas\\admin\\views\\articles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\areas\\admin\\views\\articles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D039D2B-6D87-4D73-AEE7-DC7B6DE36D08}|Shop.Infrastructure\\Shop.Infrastructure.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.infrastructure\\services\\commentmoderationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D039D2B-6D87-4D73-AEE7-DC7B6DE36D08}|Shop.Infrastructure\\Shop.Infrastructure.csproj|solutionrelative:shop.infrastructure\\services\\commentmoderationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE8FDD3-CD1F-4CF0-8424-BFA2A5730383}|Shop.Application\\Shop.Application.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.application\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FE8FDD3-CD1F-4CF0-8424-BFA2A5730383}|Shop.Application\\Shop.Application.csproj|solutionrelative:shop.application\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\shop.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\shop.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D039D2B-6D87-4D73-AEE7-DC7B6DE36D08}|Shop.Infrastructure\\Shop.Infrastructure.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D039D2B-6D87-4D73-AEE7-DC7B6DE36D08}|Shop.Infrastructure\\Shop.Infrastructure.csproj|solutionrelative:shop.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D039D2B-6D87-4D73-AEE7-DC7B6DE36D08}|Shop.Infrastructure\\Shop.Infrastructure.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D039D2B-6D87-4D73-AEE7-DC7B6DE36D08}|Shop.Infrastructure\\Shop.Infrastructure.csproj|solutionrelative:shop.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D039D2B-6D87-4D73-AEE7-DC7B6DE36D08}|Shop.Infrastructure\\Shop.Infrastructure.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D039D2B-6D87-4D73-AEE7-DC7B6DE36D08}|Shop.Infrastructure\\Shop.Infrastructure.csproj|solutionrelative:shop.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|c:\\users\\shayan\\downloads\\neo-shop-fixed\\shop.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4B135545-A508-4C93-ADD7-748A7172CD7D}|Shop.web\\Shop.web.csproj|solutionrelative:shop.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,14 +83,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Shop.web\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Shop.web\\Controllers\\CartController.cs",
-              "ViewState": "AQIAABgAAABgZmZmZmY/wCgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T19:47:06.695Z",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Views\\Articles\\Details.cshtml",
+              "RelativeDocumentMoniker": "Shop.web\\Views\\Articles\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Views\\Articles\\Details.cshtml",
+              "RelativeToolTip": "Shop.web\\Views\\Articles\\Details.cshtml",
+              "ViewState": "AQIAADQAAAAAAAAAAAAowEIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-20T06:37:59.46Z",
               "EditorCaption": ""
             },
             {
@@ -57,62 +101,189 @@
               "RelativeDocumentMoniker": "Shop.web\\Controllers\\ArticlesController.cs",
               "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\ArticlesController.cs",
               "RelativeToolTip": "Shop.web\\Controllers\\ArticlesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T19:47:05.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-20T06:37:53.938Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Shop.web\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Shop.web\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T19:47:00.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CheckoutController.cs",
-              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\CheckoutController.cs",
-              "RelativeDocumentMoniker": "Shop.web\\Controllers\\CheckoutController.cs",
-              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\CheckoutController.cs",
-              "RelativeToolTip": "Shop.web\\Controllers\\CheckoutController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T19:46:56.883Z",
-              "EditorCaption": ""
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop.web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Shop.web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAEIBAAAALDMzMzMrwF8BAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-20T06:37:22.258Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Areas\\Admin\\Views\\Articles\\Create.cshtml",
+              "RelativeDocumentMoniker": "Shop.web\\Areas\\Admin\\Views\\Articles\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Areas\\Admin\\Views\\Articles\\Create.cshtml",
+              "RelativeToolTip": "Shop.web\\Areas\\Admin\\Views\\Articles\\Create.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACgAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-20T06:36:29.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Areas\\Admin\\Views\\Articles\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Shop.web\\Areas\\Admin\\Views\\Articles\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Areas\\Admin\\Views\\Articles\\Edit.cshtml",
+              "RelativeToolTip": "Shop.web\\Areas\\Admin\\Views\\Articles\\Edit.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-20T06:35:49.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Shop.web\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Shop.web\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T19:46:52.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-20T06:33:12.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Views\\Shop\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop.web\\Views\\Shop\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Views\\Shop\\Index.cshtml",
+              "RelativeToolTip": "Shop.web\\Views\\Shop\\Index.cshtml",
+              "ViewState": "AQIAAG4AAABgZmZmZmYkwHMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-20T06:30:43.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "Shop.web\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "Shop.web\\Controllers\\ShopController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T06:30:39.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "Shop.web\\Views\\Products\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "Shop.web\\Views\\Products\\Details.cshtml",
+              "ViewState": "AQIAAL8AAAAAMDMzMzMLwBcBAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-20T06:02:34.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Shop.web\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Shop.web\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAABIAAAAAODMzMzPjvwAAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T19:46:44.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-20T06:02:30.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CommentModerationService.cs",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Infrastructure\\Services\\CommentModerationService.cs",
+              "RelativeDocumentMoniker": "Shop.Infrastructure\\Services\\CommentModerationService.cs",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Infrastructure\\Services\\CommentModerationService.cs",
+              "RelativeToolTip": "Shop.Infrastructure\\Services\\CommentModerationService.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAADwvz0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T18:26:43.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Shop.web.csproj",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Shop.web.csproj",
+              "RelativeDocumentMoniker": "Shop.web\\Shop.web.csproj",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\Shop.web.csproj",
+              "RelativeToolTip": "Shop.web\\Shop.web.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-19T17:07:17.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Application\\Services\\CommentService.cs",
+              "RelativeDocumentMoniker": "Shop.Application\\Services\\CommentService.cs",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Application\\Services\\CommentService.cs",
+              "RelativeToolTip": "Shop.Application\\Services\\CommentService.cs",
+              "ViewState": "AQIAACcAAAAAmZmZmZn5vzIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T16:58:21.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Shop.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Shop.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABIAAACAmZmZmZk7wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T16:56:57.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Infrastructure\\Repositories\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "Shop.Infrastructure\\Repositories\\CommentRepository.cs",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Infrastructure\\Repositories\\CommentRepository.cs",
+              "RelativeToolTip": "Shop.Infrastructure\\Repositories\\CommentRepository.cs",
+              "ViewState": "AQIAAGcAAAAAmpmZmZktwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T16:56:34.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Shop.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "Shop.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AQIAACsAAAAgZmZmZmYswDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T16:48:19.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\appsettings.json",
+              "RelativeDocumentMoniker": "Shop.web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\appsettings.json",
+              "RelativeToolTip": "Shop.web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-19T16:45:16.559Z"
             }
           ]
         }

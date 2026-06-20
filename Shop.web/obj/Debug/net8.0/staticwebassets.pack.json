@@ -605,6 +605,10 @@
       "PackagePath": "staticwebassets\\images\\aboutus\\star.png"
     },
     {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\4857d44a0ce743f98a8c40f525e39117.jpg",
+      "PackagePath": "staticwebassets\\images\\articles\\4857d44a0ce743f98a8c40f525e39117.jpg"
+    },
+    {
       "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\aaSsjevFjjFwAXTDz3kiKo.jpg",
       "PackagePath": "staticwebassets\\images\\articles\\aaSsjevFjjFwAXTDz3kiKo.jpg"
     },
@@ -617,8 +621,20 @@
       "PackagePath": "staticwebassets\\images\\articles\\article-1.jpg"
     },
     {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\e093e1337a404a8f953c1c58903afe21.jpg",
+      "PackagePath": "staticwebassets\\images\\articles\\e093e1337a404a8f953c1c58903afe21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\e4894f065a444631adff46ab6249600e.jpg",
+      "PackagePath": "staticwebassets\\images\\articles\\e4894f065a444631adff46ab6249600e.jpg"
+    },
+    {
       "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\f239d86fc4f549ff9c39bbf48cb62d9d.jpg",
       "PackagePath": "staticwebassets\\images\\articles\\f239d86fc4f549ff9c39bbf48cb62d9d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\f2e5a5cb0b8d4094b455a33f7801ffc9.jpg",
+      "PackagePath": "staticwebassets\\images\\articles\\f2e5a5cb0b8d4094b455a33f7801ffc9.jpg"
     },
     {
       "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\articles\\profile.jpg",
@@ -707,6 +723,54 @@
     {
       "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\logo\\mobile-logo.psd",
       "PackagePath": "staticwebassets\\images\\logo\\mobile-logo.psd"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\15f67b5e065f414093f0a6f2c050000a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\15f67b5e065f414093f0a6f2c050000a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\2e5034858a3f4ce0bc9ccc53810f8f2e.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\2e5034858a3f4ce0bc9ccc53810f8f2e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\33490d0b19d94276b8fde3c7ff7e1388.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\33490d0b19d94276b8fde3c7ff7e1388.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\33bf17f8b92840fe968ffc353cba39c5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\33bf17f8b92840fe968ffc353cba39c5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\3501b1b2663e46d8aa87d27112ce9ae7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3501b1b2663e46d8aa87d27112ce9ae7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\72f32f1bebcb497ba4c40533c2a19a49.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\72f32f1bebcb497ba4c40533c2a19a49.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\7f008568810e4fa88704c66be6622850.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\7f008568810e4fa88704c66be6622850.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\91104c69f6414d83a23d614fb7050617.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\91104c69f6414d83a23d614fb7050617.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\a8cc020531ba402380d676bced154dee.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a8cc020531ba402380d676bced154dee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\b902dc7936274e0f9a64963be754ad56.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b902dc7936274e0f9a64963be754ad56.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\beacae7d59dd4c5f93bc0ed02ad66752.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\beacae7d59dd4c5f93bc0ed02ad66752.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\ea147be758a54cad9fb2ed1a649eb19d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\ea147be758a54cad9fb2ed1a649eb19d.jpg"
     },
     {
       "Id": "C:\\Users\\Shayan\\Downloads\\Neo-Shop-fixed\\Shop.web\\wwwroot\\images\\products\\mo.png",

@@ -8,6 +8,7 @@ using Shop.Infrastructure.Data;
 using Shop.Infrastructure.Identity;
 using Shop.Infrastructure.Repositories;
 using Shop.Infrastructure.Services;
+using Shop.Application.DTOs;
 
 namespace Shop.Infrastructure;
 
@@ -55,6 +56,12 @@ public static class DependencyInjection
             sp.GetRequiredService<IOrderRepository>(),
             sp.GetRequiredService<IProductRepository>(),
             digitalPath));
+
+        services.Configure<OllamaSettings>(
+    configuration.GetSection("Ollama"));
+
+        services.AddScoped<ICommentModerationService,
+                   CommentModerationService>();
 
         return services;
     }

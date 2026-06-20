@@ -11,6 +11,7 @@ C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Infrastructure\obj\Debug\net8.0\Sh
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Infrastructure\obj\Debug\net8.0\Shop.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Infrastructure\obj\Debug\net8.0\Shop.Infrastructure.AssemblyInfo.cs
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Infrastructure\obj\Debug\net8.0\Shop.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Infrastructure\obj\Debug\net8.0\Shop.Infrastructure.sourcelink.json
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Infrastructure\obj\Debug\net8.0\Shop.Inf.23789BD3.Up2Date
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Infrastructure\obj\Debug\net8.0\Shop.Infrastructure.dll
 C:\Users\Shayan\Downloads\Neo-Shop-fixed\Shop.Infrastructure\obj\Debug\net8.0\refint\Shop.Infrastructure.dll

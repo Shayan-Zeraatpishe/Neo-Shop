@@ -1595,6 +1595,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11",
+          "Microsoft.Extensions.Options": "8.0.2",
           "Shop.Application": "1.0.0",
           "Shop.Domain": "1.0.0"
         },
@@ -4194,6 +4195,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.Design >= 8.0.27",
+      "Microsoft.Extensions.Options >= 8.0.2",
       "Shop.Application >= 1.0.0",
       "Shop.Infrastructure >= 1.0.0"
     ]
@@ -4260,6 +4262,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.27, )"
+          },
+          "Microsoft.Extensions.Options": {
+            "target": "Package",
+            "version": "[8.0.2, )"
           }
         },
         "imports": [

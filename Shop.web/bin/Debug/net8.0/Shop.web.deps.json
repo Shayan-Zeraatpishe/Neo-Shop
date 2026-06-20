@@ -9,6 +9,7 @@
       "Shop.web/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "8.0.27",
+          "Microsoft.Extensions.Options": "8.0.2",
           "Shop.Application": "1.0.0",
           "Shop.Infrastructure": "1.0.0"
         },
@@ -968,6 +969,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11",
+          "Microsoft.Extensions.Options": "8.0.2",
           "Shop.Application": "1.0.0",
           "Shop.Domain": "1.0.0"
         },
